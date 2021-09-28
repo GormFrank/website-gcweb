@@ -1,9 +1,10 @@
 remote_theme: wet-boew/gcweb-jekyll
 title: Sample website with GCWeb Jekyll theme
 
-# Front matter
+#
+# Page front matter defaults
 defaults:
   - scope:
-    path: "" # Ensure it's applied to all pages
-   values:
-    layout: default
+      path: "" # Ensure it's applied to all pages
+    values:
+      layout: default
