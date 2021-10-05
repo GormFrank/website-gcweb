@@ -2,11 +2,12 @@
 title: GCWeb Test Sandbox
 ---
 
+<div class="wb-frmvld">
 <form action="wb-postback-en.html" class="wb-postback" data-wb-postback="{&quot;success&quot;:&quot;success-message&quot;,&quot;failure&quot;:&quot;failure-message&quot;}">
 	<div class="form-content">
 		<div class="form-group">
-			<label for="firstname"><span class="field-name">First Name</span></label>
-			<input class="form-control" id="firstname" name="firstname" type="text" data-rule-minlength="2" />
+			<label for="firstname" class="required"><span class="field-name">First Name</span> <strong class="required">(required)</strong></label>
+			<input class="form-control" id="firstname" name="firstname" type="text" data-rule-minlength="2" required="required" />
 		</div>
 		<div class="form-group">
 			<label for="lastname"><span class="field-name">Last Name</span></label>
@@ -25,3 +26,4 @@ title: GCWeb Test Sandbox
 </form>
 <p class="success-message hide">Thank you!</p>
 <p class="failure-message hide">Something went wrong. Please submit your information via an alternative method.</p>
+</div>
