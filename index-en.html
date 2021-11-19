@@ -1,0 +1,906 @@
+---
+title: GCWeb, the WET-BOEW Canada.ca theme
+altLangPage: accueil.html
+dateModified: 2021-11-10
+description: "Home page describing all the components of the Canada.ca theme, named GCWeb."
+layout: no-container
+lang: en
+---
+<div class="row">
+	<div class="col-md-3">
+		<nav class="well well-lg mrgn-tp-lg">
+	<h2 class="mrgn-tp-md">Table of content</h2>
+			<ul class="list-unstyled">
+	<li class="mrgn-bttm-md"><a href="#"><span class="glyphicon glyphicon-ok-circle mrgn-rght-md" aria-hidden="true"></span><strong>Get started</strong></a></li>
+<li class="mrgn-bttm-md"><a href="#"><strong>Components</strong></a>
+		<ul>
+			<li><a href="#">Stable</a></li>
+			<li><a href="#">Provisional</a></li>
+			</ul></li>
+<li class="mrgn-bttm-md"><a href="#"><strong>Templates</strong></a>
+		<ul>
+			<li><a href="#">Stable</a></li>
+			<li><a href="#">Provisional</a></li>
+	
+			</ul></li>
+<li class="mrgn-bttm-md"><a href="#"><strong>Méli-mélo</strong></a></li><a href="#">
+</a><li class="mrgn-bttm-md"><a href="#"></a><a href="#"><strong>Sites and global functionality</strong></a></li><a href="#">
+</a><li class="mrgn-bttm-md"><a href="#"></a><a href="#"><strong>Others</strong>
+		</a><ul><a href="#">
+			</a><li><a href="#"></a><a href="#">WET-BOEW feature demos styled with Canada.ca theme</a></li>
+			<li><a href="#">More documentation</a></li>
+			</ul></li>
+	<li class="mrgn-bttm-lg"><a href="#"><strong><span class="glyphicon glyphicon-console mrgn-rght-md" aria-hidden="true"></span>Developing for GCWeb</strong></a></li>
+</ul>
+		</nav>
+	</div>
+	<div class="col-md-8">
+<h1 id="wb-cont" property="name">GCWeb, the WET-BOEW Canada.ca theme</h1>
+<div class="row">
+	<div class="col-md-7 col-lg-8">
+		<p>The page templates and design patterns below comprise a reference implementation of the <a href="https://design.canada.ca">Canada.ca design system</a>, including the mandatory requirement of the Content and Information Architecture (C&amp;IA) Specification. Government of Canada departments and agencies can contribute additional patterns and templates via <a href="https://github.com/wet-boew/GCWeb">GCWeb github repository</a>.</p>
+	</div>
+	<div class="col-xs-12 col-md-auto pull-right">
+		<p><a href="https://github.com/wet-boew/GCWeb/archive/v9.5.0.zip" class="btn btn-primary">Download GCWeb theme <strong>v9.5.0</strong></a><br>
+			<small>(<time>2021-08-06</time> - <a href="https://github.com/wet-boew/gcweb/releases/tag/v9.5.0">Release notes</a>)</small></p>
+	</div>
+</div>
+
+<ul class="colcount-md-2">
+	<li><a href="docs/index.html">GCWeb v5 Summary and others technical notes</a></li>
+	<li><a href="docs/implementing.html">Implementing GCWeb</a></li>
+	<li><a href="#components">Components</a></li>
+	<li><a href="#templates">Templates</a></li>
+	<li><a href="méli-mélo/méli-mélo-en.html">Méli-mélo features</a></li>
+	<li><a href="thématique/gc-thématique-en.html">GC promotional thematic</a></li>
+	<li><a href="#sitesglobal">Sites and global functionality</a></li>
+</ul>
+
+<p><small>Found an C&amp;IA implementation issue or you want to contribute at their development, let us know by submiting <a href="https://github.com/wet-boew/GCWeb/issues/new?title=C&amp;IA%20implementation%20error:%20">GCweb issue</a>, sending <a href="https://github.com/wet-boew/GCWeb/pulls">pull request</a> or by participating at one of our <a href="https://wet-boew.github.io/wet-boew-documentation/index-en.html#wet-boew-code-sprint">WET-BOEW weekly Tuesday code sprint</a>.</small></p>
+
+<!--
+The following status was not transposed yet with the repository structure reorg
+<details>
+	<summary>Meaning of statuses</summary>
+	<dl class="dl-horizontal mrgn-bttm-0">
+		<dt><span class="label label-success">Up to spec</span></dt>
+		<dd>Meet the latest published C&amp;IA specification.</dd>
+		<dt><span class="label label-success">Stable</span></dt>
+		<dd>Meet the latest published specification.</dd>
+		<dt><span class="label label-info">Informational</span></dt>
+		<dd>It's for your information. It's complete and suggestive but not defined by and from a specification yet.</dd>
+		<dt><span class="label label-info">Need to revalidate</span></dt>
+		<dd>Was meeting the preceding published specification, but it need to be manually revalidated to ensure it continues to meet the latest published specification.</dd>
+		<dt><span class="label label-warning">Partial</span></dt>
+		<dd>Partially up to spec or partially stable in order to meet other core web standards such WCAG 2.0 Level AA.</dd>
+		<dt><span class="label label-warning">Outdated</span></dt>
+		<dd>Don't meet the latest specification but met a previous version. It requires updates.</dd>
+		<dt><span class="label label-default">Backlog</span></dt>
+		<dd>Need to be developped.</dd>
+		<dt><span class="label label-danger">Incomplete</span></dt>
+		<dd>Incomplete because it don't fully meet all the specification yet. Still need developpement work.</dd>
+		<dt><span class="label label-danger">Deprecated</span></dt>
+		<dd>Do not use because it's deprecated, but listed here for your information.</dd>
+	</dl>
+</details>
+-->
+
+<h2 id="components">Components</h2>
+
+{% assign page_group = site.data.i18n.page_group[ page.lang ] %}
+{% assign comp_status = site.data.i18n.component_status[ page.lang ] %}
+
+<ul class="row list-unstyled wb-eqht">
+{% assign components = site.data.components %}
+{% for component in site.data.components %}
+	{% assign list-pages = component.pages %}
+	<li class="col-md-4">
+		<div class="brdr-tp brdr-rght brdr-bttm brdr-lft">
+			<h3 class="mrgn-tp-md mrgn-rght-md mrgn-bttm-md mrgn-lft-md">{{ component.title[ page.lang ] }} <span class="label label-default small"><span class="wb-inv">State: </span>(State: {{ comp_status[ component.status ] | default: "Undefined" }})</span></h3>
+			<ul class="list-unstyled mrgn-rght-md mrgn-bttm-lg mrgn-lft-md">
+			{% for pgGroup in list-pages %}
+				{% assign grpkey = pgGroup[0] %}
+				<li>{{ page_group[ grpkey ] | default: "Unknown group" }}
+					<ul>
+					{% assign examples = pgGroup[1] | where: "language", page.lang %}
+					{% for example in examples %}
+						{% if example.path %}
+						<li><a href="components/
+									{%- if component.componentName -%}
+										{{ component.componentName }}/
+									{%- endif -%}
+								{{ example.path }}">{{ example.title }}</a></li>
+						{% elsif example.url %}
+							<li><a href="{{ example.url }}">{{ example.title }}</a></li>
+						{% else %}
+							<li>{{ example.title }}</li>
+						{% endif %}
+					{% endfor %}
+					</ul>
+				</li>
+			{% endfor %}
+			</ul>
+		</div>
+	</li>
+{% endfor %}
+</ul>
+
+<h2 id="templates">Templates</h2>
+<ul>
+
+	
+	<li>Advanced Service - Probably deprecated (État: Stable)
+	<ul>
+	
+		
+		<li>Examples
+			<ul>
+			
+			
+				
+				<li><a href="templates/advancedservice/index-en.html" lang="en" hreflang="en">[Service name] - 1. [Step / section page name]</a></li>
+				
+			
+				
+				<li><a href="templates/advancedservice/page2-en.html" lang="en" hreflang="en">[Service name] - 2. [Step / section page name]</a></li>
+				
+			
+				
+				<li><a href="templates/advancedservice/page3-en.html" lang="en" hreflang="en">[Service name] - 3. [Step / section page name]</a></li>
+				
+			
+				
+				<li><a href="templates/advancedservice/page4-en.html" lang="en" hreflang="en">[Service name] - 4. [Step / section page name]</a></li>
+				
+			
+				
+				<li><a href="templates/advancedservice/page5-en.html" lang="en" hreflang="en">[Service name] - 5. [Step / section page name]</a></li>
+				
+			
+				
+				<li><a href="templates/advancedservice/page6-en.html" lang="en" hreflang="en">[Service name] - 6. [Step / section page name]</a></li>
+				
+			
+			</ul>
+		</li>
+	
+	</ul></li>
+
+	
+	<li>Campaign name (État: Stable)
+	<ul>
+	
+		
+		<li>Examples
+			<ul>
+			
+			
+				
+				<li><a href="templates/campaign/campaign-en.html" lang="en" hreflang="en">Campaign name</a></li>
+				
+			
+				
+				<li><a href="templates/campaign/campaign2-en.html" lang="en" hreflang="en">Campaign name 2</a></li>
+				
+			
+			</ul>
+		</li>
+	
+		
+		<li>Documentations
+			<ul>
+			
+			
+				
+				<li><a href="templates/campaign/api.html" lang="en" hreflang="en">API documentations</a></li>
+				
+			
+			</ul>
+		</li>
+	
+	</ul></li>
+
+	
+	<li>Home (État: Stable)
+	<ul>
+	
+		
+		<li>Examples
+			<ul>
+			
+			
+				
+				<li><a href="templates/home/home-en.html" lang="en" hreflang="en">Home - Canada.ca</a></li>
+				
+			
+			</ul>
+		</li>
+	
+		
+		<li>Documentations
+			<ul>
+			
+			
+				
+				<li><a href="templates/home/api.html" lang="en" hreflang="en">API documentations</a></li>
+				
+			
+			</ul>
+		</li>
+	
+	</ul></li>
+
+	
+	<li>Other template (État: Stable)
+	<ul>
+	
+		
+		<li>Examples
+			<ul>
+			
+			
+				
+				<li><a href="templates/content-en.html" lang="en" hreflang="en">Content page</a></li>
+				
+			
+				
+				<li><a href="templates/content-fluid-en.html" lang="en" hreflang="en">Fluid content page</a></li>
+				
+			
+				
+				<li><a href="templates/content-limit-en.html" lang="en" hreflang="en">Content page - Limited width content</a></li>
+				
+			
+				
+				<li><a href="templates/content-gcweb-4-0-29-font-style-en.html" lang="en" hreflang="en">Content page - GCWeb 4.0.29 font stylee</a></li>
+				
+			
+				
+				<li><a href="templates/content-signedoff-en.html" lang="en" hreflang="en">Content page - Signed Off</a></li>
+				
+			
+				
+				<li><a href="templates/content-signedon-en.html" lang="en" hreflang="en">Content page - Signed On</a></li>
+				
+			
+				
+				<li><a href="templates/widgets-en.html" lang="en" hreflang="en">Stay connected</a></li>
+				
+			
+				
+				<li><a href="templates/theme-en.html" lang="en" hreflang="en">[Theme title]</a></li>
+				
+			
+				
+				<li><a href="templates/dept-en.html" lang="en" hreflang="en">Departments and agencies</a></li>
+				
+			
+				
+				<li><a href="templates/event-en.html" lang="en" hreflang="en">Promotional events page (Campaign?)</a></li>
+				
+			
+				
+				<li><a href="templates/feedback-en.html" lang="en" hreflang="en">Feedback form</a></li>
+				
+			
+				
+				<li><a href="templates/gc-audience-en.html" lang="en" hreflang="en">[Audience name]</a></li>
+				
+			
+				
+				<li><a href="templates/service-en.html" lang="en" hreflang="en">Service initiation - Might deprecated</a></li>
+				
+			
+			</ul>
+		</li>
+	
+	</ul></li>
+
+	
+	<li>Index (État: Stable)
+	<ul>
+	
+		
+		<li>Examples
+			<ul>
+			
+			
+				
+				<li><a href="templates/index/longindex-en.html" lang="en" hreflang="en">[Long index page]</a></li>
+				
+			
+			</ul>
+		</li>
+	
+		
+		<li>Documentations
+			<ul>
+			
+			
+				
+				<li><a href="templates/index/api.html" lang="en" hreflang="en">API documentations</a></li>
+				
+			
+			</ul>
+		</li>
+	
+	</ul></li>
+
+	
+	<li>Institutional profile (État: Stable)
+	<ul>
+	
+		
+		<li>Examples
+			<ul>
+			
+			
+				
+				<li><a href="templates/institutional/institution-en.html" lang="en" hreflang="en">[Institution Name]</a></li>
+				
+			
+				
+				<li><a href="templates/institutional/institution-landing-en.html" lang="en" hreflang="en">[Institution Name] - landing page (provisional)</a></li>
+				
+			
+				
+				<li><a href="templates/institutional/institution-contact-en.html" lang="en" hreflang="en">Contact [Institution name]</a></li>
+				
+			
+				
+				<li><a href="templates/institutional/institutional-service-performance-en.html" lang="en" hreflang="en">[Institution] service performance reporting for fiscal year 2015 to 2016</a></li>
+				
+			
+				
+				<li><a href="templates/institutional/institution-arms-en.html" lang="en" hreflang="en">arm’s length - [Institution Name]</a></li>
+				
+			
+			</ul>
+		</li>
+	
+		
+		<li>Related documents
+			<ul>
+			
+			
+				
+					<li><a href="https://wet-boew.github.io/themes-dist/theme-gcwu-fegc/institution-en.html" lang="en" hreflang="en">GCWU theme - English institution template</a></li>
+				
+			
+			</ul>
+		</li>
+	
+	</ul></li>
+
+	
+	<li>Laws and regulations pages (État: Stable)
+	<ul>
+	
+		
+		<li>Examples
+			<ul>
+			
+			
+				
+				<li><a href="templates/legislation/act-en.html" lang="en" hreflang="en">[Act name] <small>([NN-XX])</small></a></li>
+				
+			
+				
+				<li><a href="templates/legislation/regulations-en.html" lang="en" hreflang="en">[Regulation name] <small>([NN-XX])</small></a></li>
+				
+			
+			</ul>
+		</li>
+	
+		
+		<li>Specification
+			<ul>
+			
+			
+				
+					<li><a href="https://design.canada.ca/recommended-templates/laws-regulations-pages.html" lang="en" hreflang="en">Laws and regulations pages - Canada.ca template</a></li>
+				
+			
+			</ul>
+		</li>
+	
+	</ul></li>
+
+	
+	<li>Local navigation (État: Stable)
+	<ul>
+	
+		
+		<li>Examples
+			<ul>
+			
+			
+				
+				<li><a href="templates/localnav/index-en.html" lang="en" hreflang="en">[Topic - Local navigation]</a></li>
+				
+			
+				
+				<li><a href="templates/localnav/task1/index-en.html" lang="en" hreflang="en">Task 1</a></li>
+				
+			
+				
+				<li><a href="templates/localnav/task1/task1/index-en.html" lang="en" hreflang="en">Sub task 1</a></li>
+				
+			
+				
+				<li><a href="templates/localnav/task1/task2/index-en.html" lang="en" hreflang="en">Sub task 2</a></li>
+				
+			
+				
+				<li><a href="templates/localnav/task1/task3/index-en.html" lang="en" hreflang="en">Sub task 3</a></li>
+				
+			
+				
+				<li><a href="templates/localnav/task1/task4/index-en.html" lang="en" hreflang="en">Sub task 4</a></li>
+				
+			
+				
+				<li><a href="templates/localnav/task1/task5/index-en.html" lang="en" hreflang="en">Sub task 5</a></li>
+				
+			
+				
+				<li><a href="templates/localnav/task1/task6/index-en.html" lang="en" hreflang="en">Sub task 6</a></li>
+				
+			
+				
+				<li><a href="templates/localnav/task1/task7/index-en.html" lang="en" hreflang="en">Sub task 7</a></li>
+				
+			
+				
+				<li><a href="templates/localnav/task2/index-en.html" lang="en" hreflang="en">Task 2</a></li>
+				
+			
+				
+				<li><a href="templates/localnav/task3/index-en.html" lang="en" hreflang="en">Task 3</a></li>
+				
+			
+				
+				<li><a href="templates/localnav/task3/task1/index-en.html" lang="en" hreflang="en">Sub task 1</a></li>
+				
+			
+				
+				<li><a href="templates/localnav/task3/task2/index-en.html" lang="en" hreflang="en">Sub task 2</a></li>
+				
+			
+				
+				<li><a href="templates/localnav/task3/task2/task1/index-en.html" lang="en" hreflang="en">Sub sub task 1</a></li>
+				
+			
+				
+				<li><a href="templates/localnav/task3/task2/task2/index-en.html" lang="en" hreflang="en">Sub sub task 2</a></li>
+				
+			
+				
+				<li><a href="templates/localnav/task3/task3/index-en.html" lang="en" hreflang="en">Sub task 3</a></li>
+				
+			
+				
+				<li><a href="templates/localnav/task4/index-en.html" lang="en" hreflang="en">Task 4</a></li>
+				
+			
+			</ul>
+		</li>
+	
+	</ul></li>
+
+	
+	<li>Ministerial profile (État: Stable)
+	<ul>
+	
+		
+		<li>Documentations
+			<ul>
+			
+			
+				
+				<li><a href="templates/ministerial/ministerial-doc-en.html" lang="en" hreflang="en">Ministerial profile page</a></li>
+				
+			
+			</ul>
+		</li>
+	
+		
+		<li>Examples
+			<ul>
+			
+			
+				
+				<li><a href="templates/ministerial/ministerial-en.html" lang="en" hreflang="en">Ministerial profile</a></li>
+				
+			
+				
+				<li><a href="templates/ministerial/ministerial-reduced-en.html" lang="en" hreflang="en">Ministerial profile - swearing-in day</a></li>
+				
+			
+			</ul>
+		</li>
+	
+	</ul></li>
+
+	
+	<li>News (État: Stable)
+	<ul>
+	
+		
+		<li>Examples
+			<ul>
+			
+			
+				
+				<li><a href="templates/news/news-en.html" lang="en" hreflang="en">News</a></li>
+				
+			
+			</ul>
+		</li>
+	
+	</ul></li>
+
+	
+	<li>Organizational profile (État: Stable)
+	<ul>
+	
+		
+		<li>Examples
+			<ul>
+			
+			
+				
+				<li><a href="templates/organizational/organizational-en.html" lang="en" hreflang="en">[Organization Name]</a></li>
+				
+			
+				
+				<li><a href="templates/organizational/organizational-arms-en.html" lang="en" hreflang="en">arm’s length - [Organization Name]</a></li>
+				
+			
+			</ul>
+		</li>
+	
+	</ul></li>
+
+	
+	<li>Search results (État: Stable)
+	<ul>
+	
+		
+		<li>Examples
+			<ul>
+			
+			
+				
+				<li><a href="templates/search/results-en.html" lang="en" hreflang="en">Search results</a></li>
+				
+			
+				
+				<li><a href="templates/search/results-filters-en.html" lang="en" hreflang="en">Search facets/filters results</a></li>
+				
+			
+				
+				<li><a href="templates/search/results-contextual-en.html" lang="en" hreflang="en">Contextual</a></li>
+				
+			
+			</ul>
+		</li>
+	
+		
+		<li>Documentations
+			<ul>
+			
+			
+				
+				<li><a href="templates/search/api.html" lang="en" hreflang="en">API documentations</a></li>
+				
+			
+			</ul>
+		</li>
+	
+		
+		<li>Implementation reference
+			<ul>
+			
+			
+				
+				<li><a href="templates/search/test-pagination.html" lang="en" hreflang="en">Pagination for search templates</a></li>
+				
+			
+			</ul>
+		</li>
+	
+	</ul></li>
+
+	
+	<li>Server error message (État: Stable)
+	<ul>
+	
+		
+		<li>Examples
+			<ul>
+			
+			
+				
+				<li><a href="templates/servermessage/404-en.html" lang="en" hreflang="en">We couldn't find that Web page (Error 404) - Canada.ca theme</a></li>
+				
+			
+				
+				<li><a href="templates/servermessage/404-en-fr.html" lang="en" hreflang="en">We couldn't find that Web page (Error 404) - Canada.ca theme / Nous ne pouvons trouver cette page Web (Erreur 404) - Thème Canada.ca</a></li>
+				
+			
+				
+				<li><a href="templates/servermessage/servermessage-en.html" lang="en" hreflang="en">Message title - Canada.ca theme</a></li>
+				
+			
+				
+				<li><a href="templates/servermessage/servermessage-en-fr.html" lang="en" hreflang="en">Message title - Canada.ca theme / Titre du message - Thème Canada.ca</a></li>
+				
+			
+			</ul>
+		</li>
+	
+	</ul></li>
+
+	
+	<li>Splash page - Canada.ca (État: Stable)
+	<ul>
+	
+		
+		<li>Examples
+			<ul>
+			
+			
+				
+				<li><a href="templates/splash/splashpage.html" lang="en" hreflang="en">Splash page example</a></li>
+				
+			
+			</ul>
+		</li>
+	
+	</ul></li>
+
+	
+	<li>Thematic (État: Provisional)
+	<ul>
+	
+		
+		<li>Examples
+			<ul>
+			
+			
+				
+				<li><a href="templates/thematic/pink-day-en.html" lang="en" hreflang="en">Pink Day</a></li>
+				
+			
+				
+				<li><a href="templates/thematic/dark-theme-en.html" lang="en" hreflang="en">Dark theme</a></li>
+				
+			
+			</ul>
+		</li>
+	
+	</ul></li>
+
+	
+	<li>Beta - Theme, Topic (État: Provisional)
+	<ul>
+	
+		
+		<li>Examples
+			<ul>
+			
+			
+				
+				<li><a href="templates/theme-topic/theme-topic-en.html" lang="en" hreflang="en">[Theme - Topic title]</a></li>
+				
+			
+			</ul>
+		</li>
+	
+	</ul></li>
+
+	
+	<li>Topic (État: Stable)
+	<ul>
+	
+		
+		<li>Examples
+			<ul>
+			
+			
+				
+				<li><a href="templates/topic/topic-en.html" lang="en" hreflang="en">[Topic title]</a></li>
+				
+			
+				
+				<li><a href="templates/topic/topic-testcase-1-en.html" lang="en" hreflang="en">[Topic title, test case 1]</a></li>
+				
+			
+			</ul>
+		</li>
+	
+	</ul></li>
+
+</ul>
+
+<h2 id="méli-mélo">Méli-mélo</h2>
+
+<p><a href="méli-mélo/méli-mélo-en.html">Consult méli-mélo dedicated page</a></p>
+
+
+<h2 id="sitesglobal">Sites and global functionality</h2>
+<ul>
+
+	
+	<li>Site wide demoed feature (État: Stable)
+	<ul>
+	
+		
+		<li>Examples
+			<ul>
+			
+			
+				
+				<li><a href="sites/archived/archived-en.html" lang="en" hreflang="en">Archived - Content page</a></li>
+				
+			
+			</ul>
+		</li>
+	
+	</ul></li>
+
+	
+	<li>Breadcrumbs (État: Stable)
+	<ul>
+	
+		
+		<li>Documentations
+			<ul>
+			
+			
+				
+				<li><a href="sites/breadcrumbs/breadcrumbs-en.html" lang="en" hreflang="en">Breadcrumbs</a></li>
+				
+			
+			</ul>
+		</li>
+	
+	</ul></li>
+
+	
+	<li>Helpers (État: Stable)
+	<ul>
+	
+		
+		<li>Documentations
+			<ul>
+			
+			
+				
+				<li><a href="sites/helpers/colour-en.html" lang="en" hreflang="en">Colour</a></li>
+				
+			
+			</ul>
+		</li>
+	
+	</ul></li>
+
+</ul>
+
+<h2>WET-BOEW feature demos styled with Canada.ca theme</h2>
+<p><a href="/gcweb-compiled-demos/index.html#wet-boew">WET-BOEW feature overview</a></p>
+
+<h2 id="gcweb-project-documentation">GCWeb project documentation</h2>
+
+<ul>
+  <li><a href="/GCWeb/docs/">GCWeb theme - Meta information</a></li>
+  <li><a href="/GCWeb/docs/implementing.html">Quick implementation guide - GCWeb theme</a></li>
+  <li><a href="/GCWeb/docs/v5-migration.html">Migration instruction - GCWeb theme V5</a></li>
+  <li><a href="/GCWeb/docs/GCWeb-en.html">Archived - Documentation - GCWeb English</a></li>
+  <li><a href="/GCWeb/docs/release/index-en.html">Archived - Releases English</a></li>
+  <li><a href="/GCWeb/docs/static-header-footer/bootstrap-3.html">Skeleton - Static header/footer - Bootstrap 3</a></li>
+  <li><a href="/GCWeb/docs/static-header-footer/bootstrap-4.html">Prototype skeleton - Static header/footer - Bootstrap 4</a></li>
+</ul>
+
+<p>Evaluations and reports</p>
+
+<ul>
+  <li><a href="/GCWeb/docs/evaluation-report/1-accessibility.html">1 - Accessibility assessment as 2018-11-14</a></li>
+  <li><a href="/GCWeb/docs/evaluation-report/2-wetplugin-gcweb2.html">2 - Regression user acceptance testing as 2018-11-16</a></li>
+</ul>
+
+<h2 id="developping-for-gcweb">Developping for GCWeb</h2>
+
+<p>Install NodeJS</p>
+
+<h3 id="building-gcweb">Building GCweb</h3>
+
+<ul>
+  <li>Build a local development version: <code class="language-plaintext highlighter-rouge">grunt</code> or <code class="language-plaintext highlighter-rouge">grunt debug</code></li>
+  <li>Run code quality check: <code class="language-plaintext highlighter-rouge">grunt test</code></li>
+  <li>Build production files: <code class="language-plaintext highlighter-rouge">grunt dist</code></li>
+  <li>Compile and assemble méli-mélo:
+	<ul>
+	  <li>Run local: <code class="language-plaintext highlighter-rouge">grunt méli-mélo</code></li>
+	  <li>Run from compiled dist: <code class="language-plaintext highlighter-rouge">grunt méli-mélo-runLocal</code></li>
+	  <li>Run from wet-boew sites : <code class="language-plaintext highlighter-rouge">grunt méli-mélo-remote</code></li>
+	</ul>
+  </li>
+  <li>Regenerate site web content: <code class="language-plaintext highlighter-rouge">grunt site-contents</code>
+	<ul>
+	  <li><code class="language-plaintext highlighter-rouge">_data/components.json</code></li>
+	  <li><code class="language-plaintext highlighter-rouge">_data/sites.json</code></li>
+	  <li><code class="language-plaintext highlighter-rouge">_data/templates.json</code></li>
+	  <li><code class="language-plaintext highlighter-rouge">_wetboew-demos/**</code></li>
+	</ul>
+  </li>
+</ul>
+
+<h3 id="run-gcweb-wetsite-locally">Run GCWeb wetsite locally</h3>
+
+<p>Ensure that you have builded GCWeb first</p>
+
+<p>After your are running docking container or the docker composer you will be able to access your local website at: <code class="language-plaintext highlighter-rouge">http://localhost:4000</code></p>
+
+<p>Build Dockerfile locally</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker build -t jekyll-with-env-options .
+</code></pre></div></div>
+
+<p>Run your image</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>grunt debug
+
+docker run -it --rm -v "$PWD":/usr/src/app -p "4000:4000" --env JEKYLL_OPTIONS='--config _config.yml,_localJekyll.yml' jekyll-with-env-options
+</code></pre></div></div>
+
+<h4 id="alternative-with-docker-compose">alternative with docker-compose</h4>
+
+<p>This version leverage the remote theme wet-beoew/gcweb-jekyll. This equivalent if you run with gh-pages through your own GCWeb repository.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker-compose up
+</code></pre></div></div>
+
+<h3 id="run-the-continous-integration-and-deployment-script-locally">Run the continous integration and deployment script locally</h3>
+
+<p>Install ACT - <a href="https://github.com/nektos/act">https://github.com/nektos/act</a></p>
+
+<p>Github fork needed:</p>
+
+<ul>
+  <li><a href="https://github.com/wet-boew/gcweb">wet-boew/gcweb</a></li>
+  <li><a href="https://github.com/wet-boew/gcweb-jekyll">wet-boew/gcweb-jekyll</a></li>
+  <li><a href="https://github.com/wet-boew/gcweb-compiled-demos">wet-boew/gcweb-compiled-demos</a></li>
+  <li><a href="https://github.com/wet-boew/themes-dist">wet-boew/themes-dist</a></li>
+  <li><a href="https://github.com/wet-boew/themes-cdn">wet-boew/themes-cdn</a></li>
+</ul>
+
+<p>Run the continuous deployment script</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>act -f deploy-gcweb -s my_token=&lt;XXXXXXXXXXXXXX&gt; -s my_username="&lt;GITHUB USERNAME&gt;" - my_email="&lt;GITHUB HANDLE&gt;@users.noreply.github.com" -a &lt;GITHUB HANDLE&gt;
+</code></pre></div></div>
+
+<p>Where:</p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">&lt;GITHUB USERNAME&gt;</code>: Your name, like “John Doe”</li>
+  <li><code class="language-plaintext highlighter-rouge">&lt;GITHUB HANDLE&gt;</code>: Your github id</li>
+  <li><code class="language-plaintext highlighter-rouge">&lt;XXXXXXXXXXXXXX&gt;</code>: Your personal access token with access to public repository</li>
+</ul>
+
+<h3 id="refresh-your-github-pages-with-the-latest-theme-changes">Refresh your github pages with the latest theme changes</h3>
+
+<p>You can make a commit to your site and it will get regenerated with the latest version of the jekyll theme. Alternatively, the following curl command will told github to regenerate your site.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl -u &lt;GITHUB HANDLE&gt;:&lt;XXXXXXXXXXXXXX&gt; -X POST https://api.github.com/repos/&lt;GITHUB HANDLE&gt;/&lt;GITHUB REPOSITORY&gt;/pages/builds
+</code></pre></div></div>
+
+<p>Where:</p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">&lt;GITHUB HANDLE&gt;</code>: Your github id</li>
+  <li><code class="language-plaintext highlighter-rouge">&lt;XXXXXXXXXXXXXX&gt;</code>: Your personal access token with access to public repository</li>
+  <li><code class="language-plaintext highlighter-rouge">&lt;GITHUB REPOSITORY&gt;</code>: Your web site github repository, like “jekyll-website”</li>
+</ul>
+
+<p>Note: A manual update is required if you have specified a version for your jekyll remote theme in your <code class="language-plaintext highlighter-rouge">config.yml</code> file.</p>
+	</div>
+</div>
