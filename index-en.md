@@ -89,8 +89,8 @@ The following status was not transposed yet with the repository structure reorg
 
 	
 	<li class="col-md-4 mrgn-bttm-md">
-		<div class="brdr-tp brdr-rght brdr-bttm brdr-lft">
-			<h3 class="mrgn-tp-md mrgn-rght-md mrgn-bttm-md mrgn-lft-md">Advanced Service - Probably deprecated <span class="label label-default small"><span class="wb-inv">State: </span>Stable</span></h3>
+		<div class="brdr-tp brdr-rght brdr-bttm brdr-lft hght-inhrt">
+			<h3 class="mrgn-tp-md mrgn-rght-md mrgn-bttm-sm mrgn-lft-md">Advanced Service - Probably deprecated <span class="label label-default small"><span class="wb-inv">State: </span>Stable</span></h3>
 			<ul class="list-unstyled mrgn-rght-md mrgn-bttm-lg mrgn-lft-md">
 	
 		
@@ -129,8 +129,8 @@ The following status was not transposed yet with the repository structure reorg
 
 	
 	<li class="col-md-4 mrgn-bttm-md">
-		<div class="brdr-tp brdr-rght brdr-bttm brdr-lft">
-			<h3 class="mrgn-tp-md mrgn-rght-md mrgn-bttm-md mrgn-lft-md"><a href="templates/campaign/api.html" lang="en" hreflang="en">Campaign name</a> <span class="label label-default small"><span class="wb-inv">State: </span>Stable</span></h3>
+		<div class="brdr-tp brdr-rght brdr-bttm brdr-lft hght-inhrt">
+			<h3 class="mrgn-tp-md mrgn-rght-md mrgn-bttm-sm mrgn-lft-md"><a href="templates/campaign/api.html" lang="en" hreflang="en">Campaign name</a> <span class="label label-default small"><span class="wb-inv">State: </span>Stable</span></h3>
 			<ul class="list-unstyled mrgn-rght-md mrgn-bttm-lg mrgn-lft-md">
 	
 		
@@ -154,8 +154,8 @@ The following status was not transposed yet with the repository structure reorg
 
 	
 	<li class="col-md-4 mrgn-bttm-md">
-		<div class="brdr-tp brdr-rght brdr-bttm brdr-lft">
-			<h3 class="mrgn-tp-md mrgn-rght-md mrgn-bttm-md mrgn-lft-md"><a href="templates/home/api.html" lang="en" hreflang="en">Home</a> <span class="label label-default small"><span class="wb-inv">State: </span>Stable</span></h3>
+		<div class="brdr-tp brdr-rght brdr-bttm brdr-lft hght-inhrt">
+			<h3 class="mrgn-tp-md mrgn-rght-md mrgn-bttm-sm mrgn-lft-md"><a href="templates/home/api.html" lang="en" hreflang="en">Home</a> <span class="label label-default small"><span class="wb-inv">State: </span>Stable</span></h3>
 			<ul class="list-unstyled mrgn-rght-md mrgn-bttm-lg mrgn-lft-md">
 	
 		
@@ -174,8 +174,8 @@ The following status was not transposed yet with the repository structure reorg
 
 	
 	<li class="col-md-4 mrgn-bttm-md">
-		<div class="brdr-tp brdr-rght brdr-bttm brdr-lft">
-			<h3 class="mrgn-tp-md mrgn-rght-md mrgn-bttm-md mrgn-lft-md">Other template <span class="label label-default small"><span class="wb-inv">State: </span>Stable</span></h3>
+		<div class="brdr-tp brdr-rght brdr-bttm brdr-lft hght-inhrt">
+			<h3 class="mrgn-tp-md mrgn-rght-md mrgn-bttm-sm mrgn-lft-md">Other template <span class="label label-default small"><span class="wb-inv">State: </span>Stable</span></h3>
 			<ul class="list-unstyled mrgn-rght-md mrgn-bttm-lg mrgn-lft-md">
 	
 		
@@ -242,8 +242,8 @@ The following status was not transposed yet with the repository structure reorg
 
 	
 	<li class="col-md-4 mrgn-bttm-md">
-		<div class="brdr-tp brdr-rght brdr-bttm brdr-lft">
-			<h3 class="mrgn-tp-md mrgn-rght-md mrgn-bttm-md mrgn-lft-md"><a href="templates/index/api.html" lang="en" hreflang="en">Index</a> <span class="label label-default small"><span class="wb-inv">State: </span>Stable</span></h3>
+		<div class="brdr-tp brdr-rght brdr-bttm brdr-lft hght-inhrt">
+			<h3 class="mrgn-tp-md mrgn-rght-md mrgn-bttm-sm mrgn-lft-md"><a href="templates/index/api.html" lang="en" hreflang="en">Index</a> <span class="label label-default small"><span class="wb-inv">State: </span>Stable</span></h3>
 			<ul class="list-unstyled mrgn-rght-md mrgn-bttm-lg mrgn-lft-md">
 	
 		
@@ -262,8 +262,8 @@ The following status was not transposed yet with the repository structure reorg
 
 	
 	<li class="col-md-4 mrgn-bttm-md">
-		<div class="brdr-tp brdr-rght brdr-bttm brdr-lft">
-			<h3 class="mrgn-tp-md mrgn-rght-md mrgn-bttm-md mrgn-lft-md">Institutional profile <span class="label label-default small"><span class="wb-inv">State: </span>Stable</span></h3>
+		<div class="brdr-tp brdr-rght brdr-bttm brdr-lft hght-inhrt">
+			<h3 class="mrgn-tp-md mrgn-rght-md mrgn-bttm-sm mrgn-lft-md">Institutional profile <span class="label label-default small"><span class="wb-inv">State: </span>Stable</span></h3>
 			<ul class="list-unstyled mrgn-rght-md mrgn-bttm-lg mrgn-lft-md">
 	
 		
@@ -298,8 +298,8 @@ The following status was not transposed yet with the repository structure reorg
 
 	
 	<li class="col-md-4 mrgn-bttm-md">
-		<div class="brdr-tp brdr-rght brdr-bttm brdr-lft">
-			<h3 class="mrgn-tp-md mrgn-rght-md mrgn-bttm-md mrgn-lft-md">Laws and regulations pages <span class="label label-default small"><span class="wb-inv">State: </span>Stable</span></h3>
+		<div class="brdr-tp brdr-rght brdr-bttm brdr-lft hght-inhrt">
+			<h3 class="mrgn-tp-md mrgn-rght-md mrgn-bttm-sm mrgn-lft-md">Laws and regulations pages <span class="label label-default small"><span class="wb-inv">State: </span>Stable</span></h3>
 			<ul class="list-unstyled mrgn-rght-md mrgn-bttm-lg mrgn-lft-md">
 	
 		
@@ -322,8 +322,8 @@ The following status was not transposed yet with the repository structure reorg
 
 	
 	<li class="col-md-4 mrgn-bttm-md">
-		<div class="brdr-tp brdr-rght brdr-bttm brdr-lft">
-			<h3 class="mrgn-tp-md mrgn-rght-md mrgn-bttm-md mrgn-lft-md">Local navigation <span class="label label-default small"><span class="wb-inv">State: </span>Stable</span></h3>
+		<div class="brdr-tp brdr-rght brdr-bttm brdr-lft hght-inhrt">
+			<h3 class="mrgn-tp-md mrgn-rght-md mrgn-bttm-sm mrgn-lft-md">Local navigation <span class="label label-default small"><span class="wb-inv">State: </span>Stable</span></h3>
 			<ul class="list-unstyled mrgn-rght-md mrgn-bttm-lg mrgn-lft-md">
 	
 		
@@ -406,8 +406,8 @@ The following status was not transposed yet with the repository structure reorg
 
 	
 	<li class="col-md-4 mrgn-bttm-md">
-		<div class="brdr-tp brdr-rght brdr-bttm brdr-lft">
-			<h3 class="mrgn-tp-md mrgn-rght-md mrgn-bttm-md mrgn-lft-md"><a href="templates/ministerial/ministerial-doc-en.html" lang="en" hreflang="en">Ministerial profile</a> <span class="label label-default small"><span class="wb-inv">State: </span>Stable</span></h3>
+		<div class="brdr-tp brdr-rght brdr-bttm brdr-lft hght-inhrt">
+			<h3 class="mrgn-tp-md mrgn-rght-md mrgn-bttm-sm mrgn-lft-md"><a href="templates/ministerial/ministerial-doc-en.html" lang="en" hreflang="en">Ministerial profile</a> <span class="label label-default small"><span class="wb-inv">State: </span>Stable</span></h3>
 			<ul class="list-unstyled mrgn-rght-md mrgn-bttm-lg mrgn-lft-md">
 	
 		
@@ -430,8 +430,8 @@ The following status was not transposed yet with the repository structure reorg
 
 	
 	<li class="col-md-4 mrgn-bttm-md">
-		<div class="brdr-tp brdr-rght brdr-bttm brdr-lft">
-			<h3 class="mrgn-tp-md mrgn-rght-md mrgn-bttm-md mrgn-lft-md">News <span class="label label-default small"><span class="wb-inv">State: </span>Stable</span></h3>
+		<div class="brdr-tp brdr-rght brdr-bttm brdr-lft hght-inhrt">
+			<h3 class="mrgn-tp-md mrgn-rght-md mrgn-bttm-sm mrgn-lft-md">News <span class="label label-default small"><span class="wb-inv">State: </span>Stable</span></h3>
 			<ul class="list-unstyled mrgn-rght-md mrgn-bttm-lg mrgn-lft-md">
 	
 		
@@ -450,8 +450,8 @@ The following status was not transposed yet with the repository structure reorg
 
 	
 	<li class="col-md-4 mrgn-bttm-md">
-		<div class="brdr-tp brdr-rght brdr-bttm brdr-lft">
-			<h3 class="mrgn-tp-md mrgn-rght-md mrgn-bttm-md mrgn-lft-md">Organizational profile <span class="label label-default small"><span class="wb-inv">State: </span>Stable</span></h3>
+		<div class="brdr-tp brdr-rght brdr-bttm brdr-lft hght-inhrt">
+			<h3 class="mrgn-tp-md mrgn-rght-md mrgn-bttm-sm mrgn-lft-md">Organizational profile <span class="label label-default small"><span class="wb-inv">State: </span>Stable</span></h3>
 			<ul class="list-unstyled mrgn-rght-md mrgn-bttm-lg mrgn-lft-md">
 	
 		
@@ -474,8 +474,8 @@ The following status was not transposed yet with the repository structure reorg
 
 	
 	<li class="col-md-4 mrgn-bttm-md">
-		<div class="brdr-tp brdr-rght brdr-bttm brdr-lft">
-			<h3 class="mrgn-tp-md mrgn-rght-md mrgn-bttm-md mrgn-lft-md"><a href="templates/search/api.html" lang="en" hreflang="en">Search results</a> <span class="label label-default small"><span class="wb-inv">State: </span>Stable</span></h3>
+		<div class="brdr-tp brdr-rght brdr-bttm brdr-lft hght-inhrt">
+			<h3 class="mrgn-tp-md mrgn-rght-md mrgn-bttm-sm mrgn-lft-md"><a href="templates/search/api.html" lang="en" hreflang="en">Search results</a> <span class="label label-default small"><span class="wb-inv">State: </span>Stable</span></h3>
 			<ul class="list-unstyled mrgn-rght-md mrgn-bttm-lg mrgn-lft-md">
 	
 		
@@ -502,8 +502,8 @@ The following status was not transposed yet with the repository structure reorg
 
 	
 	<li class="col-md-4 mrgn-bttm-md">
-		<div class="brdr-tp brdr-rght brdr-bttm brdr-lft">
-			<h3 class="mrgn-tp-md mrgn-rght-md mrgn-bttm-md mrgn-lft-md">Server error message <span class="label label-default small"><span class="wb-inv">State: </span>Stable</span></h3>
+		<div class="brdr-tp brdr-rght brdr-bttm brdr-lft hght-inhrt">
+			<h3 class="mrgn-tp-md mrgn-rght-md mrgn-bttm-sm mrgn-lft-md">Server error message <span class="label label-default small"><span class="wb-inv">State: </span>Stable</span></h3>
 			<ul class="list-unstyled mrgn-rght-md mrgn-bttm-lg mrgn-lft-md">
 	
 		
@@ -534,8 +534,8 @@ The following status was not transposed yet with the repository structure reorg
 
 	
 	<li class="col-md-4 mrgn-bttm-md">
-		<div class="brdr-tp brdr-rght brdr-bttm brdr-lft">
-			<h3 class="mrgn-tp-md mrgn-rght-md mrgn-bttm-md mrgn-lft-md">Splash page - Canada.ca <span class="label label-default small"><span class="wb-inv">State: </span>Stable</span></h3>
+		<div class="brdr-tp brdr-rght brdr-bttm brdr-lft hght-inhrt">
+			<h3 class="mrgn-tp-md mrgn-rght-md mrgn-bttm-sm mrgn-lft-md">Splash page - Canada.ca <span class="label label-default small"><span class="wb-inv">State: </span>Stable</span></h3>
 			<ul class="list-unstyled mrgn-rght-md mrgn-bttm-lg mrgn-lft-md">
 	
 		
@@ -554,8 +554,8 @@ The following status was not transposed yet with the repository structure reorg
 
 	
 	<li class="col-md-4 mrgn-bttm-md">
-		<div class="brdr-tp brdr-rght brdr-bttm brdr-lft">
-			<h3 class="mrgn-tp-md mrgn-rght-md mrgn-bttm-md mrgn-lft-md">Thematic <span class="label label-default small"><span class="wb-inv">State: </span>Provisional</span></h3>
+		<div class="brdr-tp brdr-rght brdr-bttm brdr-lft hght-inhrt">
+			<h3 class="mrgn-tp-md mrgn-rght-md mrgn-bttm-sm mrgn-lft-md">Thematic <span class="label label-default small"><span class="wb-inv">State: </span>Provisional</span></h3>
 			<ul class="list-unstyled mrgn-rght-md mrgn-bttm-lg mrgn-lft-md">
 	
 		
@@ -578,8 +578,8 @@ The following status was not transposed yet with the repository structure reorg
 
 	
 	<li class="col-md-4 mrgn-bttm-md">
-		<div class="brdr-tp brdr-rght brdr-bttm brdr-lft">
-			<h3 class="mrgn-tp-md mrgn-rght-md mrgn-bttm-md mrgn-lft-md">Beta - Theme, Topic <span class="label label-default small"><span class="wb-inv">State: </span>Provisional</span></h3>
+		<div class="brdr-tp brdr-rght brdr-bttm brdr-lft hght-inhrt">
+			<h3 class="mrgn-tp-md mrgn-rght-md mrgn-bttm-sm mrgn-lft-md">Beta - Theme, Topic <span class="label label-default small"><span class="wb-inv">State: </span>Provisional</span></h3>
 			<ul class="list-unstyled mrgn-rght-md mrgn-bttm-lg mrgn-lft-md">
 	
 		
@@ -598,8 +598,8 @@ The following status was not transposed yet with the repository structure reorg
 
 	
 	<li class="col-md-4 mrgn-bttm-md">
-		<div class="brdr-tp brdr-rght brdr-bttm brdr-lft">
-			<h3 class="mrgn-tp-md mrgn-rght-md mrgn-bttm-md mrgn-lft-md">Topic <span class="label label-default small"><span class="wb-inv">State: </span>Stable</span></h3>
+		<div class="brdr-tp brdr-rght brdr-bttm brdr-lft hght-inhrt">
+			<h3 class="mrgn-tp-md mrgn-rght-md mrgn-bttm-sm mrgn-lft-md">Topic <span class="label label-default small"><span class="wb-inv">State: </span>Stable</span></h3>
 			<ul class="list-unstyled mrgn-rght-md mrgn-bttm-lg mrgn-lft-md">
 	
 		
@@ -622,6 +622,7 @@ The following status was not transposed yet with the repository structure reorg
 
 </ul>
 
+</div>
 <div class="container-fluid">
 	<div class="row">
 		<div class="well well-lg mrgn-tp-md bg-gctheme text-white">
@@ -635,6 +636,7 @@ The following status was not transposed yet with the repository structure reorg
         </div>
     </div>
 </div>
+<div class="container">
 
 <h2 id="sitesglobal">Sites and global functionality</h2>
 <ul>
@@ -815,5 +817,3 @@ docker run -it --rm -v "$PWD":/usr/src/app -p "4000:4000" --env JEKYLL_OPTIONS='
 
 <p>Note: A manual update is required if you have specified a version for your jekyll remote theme in your <code class="language-plaintext highlighter-rouge">config.yml</code> file.</p>
 	</div>
-</div>
-</div>
