@@ -42,14 +42,14 @@ lang: en
 <h2 class="modal-title">Get started</h2>
 </header>
 <ul class="pull-left list-inline mrgn-lft-md mrgn-tp-md small">
-	<li><a href="#components" class="btn btn-link text-white">Components</a></li>
-	<li class="mrgn-lft-md"><a href="#templates" class="btn btn-link text-white">Templates</a></li>
-	<li class="mrgn-lft-md"><a href="méli-mélo/méli-mélo-en.html" class="btn btn-link text-white">Méli-mélo and thematics</a></li>
-	<li class="mrgn-lft-md"><a href="#sitesglobal" class="btn btn-link text-white">Sites and global/a></li>
-	<li class="mrgn-lft-md"><a href="#gcweb-project-documentation" class="btn btn-link text-white">Other</a></li>
-	<li class="mrgn-lft-md"><a href="#developping-for-gcweb" class="btn btn-link text-white">Developing for GCWeb</a></li>
+	<li><a href="#components" class="btn btn-link text-white"><span aria-hidden="true" class="fas fa-cube mrgn-rght-md"></span>Components</a></li>
+	<li class="mrgn-lft-md"><a href="#templates" class="btn btn-link text-white"><span aria-hidden="true" class="fas fa-table mrgn-rght-md"></span>Templates</a></li>
+	<li class="mrgn-lft-md"><a href="méli-mélo/méli-mélo-en.html" class="btn btn-link text-white"><span aria-hidden="true" class="fas fa-puzzle-piece mrgn-rght-md"></span>Méli-mélo and thematics</a></li>
+	<li class="mrgn-lft-md"><a href="#sitesglobal" class="btn btn-link text-white"><span aria-hidden="true" class="fas fa-globe mrgn-rght-md"></span>Sites and global</a></li>
+	<li class="mrgn-lft-md"><a href="#gcweb-project-documentation" class="btn btn-link text-white"><span aria-hidden="true" class="fas fa-info-circle mrgn-rght-md"></span>Other</a></li>
+	<li class="mrgn-lft-md"><a href="#developping-for-gcweb" class="btn btn-link text-white"><span aria-hidden="true" class="fas fa-code mrgn-rght-md"></span>Developing for GCWeb</a></li>
 </ul>
-<button type="button" class="mfp-close overlay-close" title="Close: Top bar (escape key)">×<span class="wb-inv"> Close: Top bar (escape key)</span></button></section>
+</section>
 <div class="container">
 <p><small>Found an C&amp;IA implementation issue or you want to contribute at their development, let us know by submiting <a href="https://github.com/wet-boew/GCWeb/issues/new?title=C&amp;IA%20implementation%20error:%20">GCweb issue</a>, sending <a href="https://github.com/wet-boew/GCWeb/pulls">pull request</a> or by participating at one of our <a href="https://wet-boew.github.io/wet-boew-documentation/index-en.html#wet-boew-code-sprint">WET-BOEW weekly Tuesday code sprint</a>.</small></p>
 
