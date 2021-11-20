@@ -6,6 +6,8 @@ description: "Home page describing all the components of the Canada.ca theme, na
 layout: no-container
 lang: en
 ---
+
+{::nomarkdown}
 <div class="row">
 	<div class="col-md-3">
 		<nav class="well well-lg mrgn-tp-lg">
