@@ -20,23 +20,36 @@ lang: en
 		</div>
 	</div>
 </div>
-<div class="container-fluid">
+<div class="container-fluid wb-inview show-none bar-demo" data-inview="nav-menu">
 	<div class="row">
-		<nav class="well well-lg well-bold mrgn-tp-md">
+		<nav class="well well-lg mrgn-tp-md">
 			<div class="container">
 				<h2 class="mrgn-tp-0">Get started</h2>
-				<ul class="list-unstyled colcount-md-2">
-					<li class="mrgn-bttm-md"><a href="#components">Components</a></li>
-					<li><a href="#templates">Templates</a></li>
-					<li><a href="méli-mélo/méli-mélo-en.html">Méli-mélo</a></li>
-					<li><a href="#sitesglobal">Sites and global functionality</a></li>
-					<li><a href="#">Others</a></li>
-					<li class="mrgn-bttm-lg"><a href="#"><span class="glyphicon glyphicon-console mrgn-rght-md" aria-hidden="true"></span>Developing for GCWeb</a></li>
+				<ul class="list-unstyled colcount-md-3">
+					<li><a href="#components"><span aria-hidden="true" class="fas fa-cube mrgn-rght-md"></span>Components</a></li>
+					<li><a href="#templates"><span aria-hidden="true" class="fas fa-table mrgn-rght-md"></span>Templates</a></li>
+					<li><a href="méli-mélo/méli-mélo-en.html"><span aria-hidden="true" class="fas fa-puzzle-piece mrgn-rght-md"></span>Méli-mélo and thematics</a></li>
+					<li><a href="#sitesglobal"><span aria-hidden="true" class="fas fa-globe mrgn-rght-md"></span>Sites and global functionality</a></li>
+					<li><a href="#gcweb-project-documentation"><span aria-hidden="true" class="fas fa-info-circle mrgn-rght-md"></span>Other documentation</a></li>
+					<li><a href="#developping-for-gcweb"><span aria-hidden="true" class="fas fa-code mrgn-rght-md"></span>Developing for GCWeb</a></li>
 				</ul>
 			</div>
 		</nav>
 	</div>
 </div>
+<section id="nav-menu" class="wb-overlay modal-content overlay-def wb-bar-t wb-init wb-overlay-inited outside-off open" aria-hidden="false">
+<header>
+<h2 class="modal-title">Get started</h2>
+</header>
+<ul class="list-inline">
+	<li><a href="#components" class="text-white">Components</a></li>
+	<li><a href="#templates" class="text-white">Templates</a></li>
+	<li><a href="méli-mélo/méli-mélo-en.html" class="text-white">Méli-mélo and thematics</a></li>
+	<li><a href="#sitesglobal" class="text-white">Sites and global functionality</a></li>
+	<li><a href="#gcweb-project-documentation" class="text-white">Other documentation</a></li>
+	<li><a href="#developping-for-gcweb" class="text-white">Developing for GCWeb</a></li>
+</ul>
+<button type="button" class="mfp-close overlay-close" title="Close: Top bar (escape key)">×<span class="wb-inv"> Close: Top bar (escape key)</span></button></section>
 <div class="container">
 <p><small>Found an C&amp;IA implementation issue or you want to contribute at their development, let us know by submiting <a href="https://github.com/wet-boew/GCWeb/issues/new?title=C&amp;IA%20implementation%20error:%20">GCweb issue</a>, sending <a href="https://github.com/wet-boew/GCWeb/pulls">pull request</a> or by participating at one of our <a href="https://wet-boew.github.io/wet-boew-documentation/index-en.html#wet-boew-code-sprint">WET-BOEW weekly Tuesday code sprint</a>.</small></p>
 
@@ -111,8 +124,8 @@ The following status was not transposed yet with the repository structure reorg
 			</ul>
 			
 			</details>
-	</div>
-	</ul></li>
+	</ul>
+	</div></li>
 
 	
 	<li class="col-md-4">
@@ -136,8 +149,8 @@ The following status was not transposed yet with the repository structure reorg
 			
 			</details>
 
-	</div>
-	</ul></li>
+	</ul>
+	</div></li>
 
 	
 	<li class="col-md-4">
@@ -156,8 +169,8 @@ The following status was not transposed yet with the repository structure reorg
 			</ul>
 			
 			</details>
-	</div>
-	</ul></li>
+	</ul>
+	</div></li>
 
 	
 	<li class="col-md-4">
@@ -224,8 +237,8 @@ The following status was not transposed yet with the repository structure reorg
 			</ul>
 			
 			</details>
-	</div>
-	</ul></li>
+	</ul>
+	</div></li>
 
 	
 	<li class="col-md-4">
@@ -244,8 +257,8 @@ The following status was not transposed yet with the repository structure reorg
 			</ul>
 			
 			</details>
-	</div>
-	</ul></li>
+	</ul>
+	</div></li>
 
 	
 	<li class="col-md-4">
@@ -280,8 +293,8 @@ The following status was not transposed yet with the repository structure reorg
 			</ul>
 			
 			</details>
-	</div>
-	</ul></li>
+	</ul>
+	</div></li>
 
 	
 	<li class="col-md-4">
@@ -304,8 +317,8 @@ The following status was not transposed yet with the repository structure reorg
 			</ul>
 			
 			</details>
-	</div>
-	</ul></li>
+	</ul>
+	</div></li>
 
 	
 	<li class="col-md-4">
@@ -388,8 +401,8 @@ The following status was not transposed yet with the repository structure reorg
 			</ul>
 			
 			</details>
-	</div>
-	</ul></li>
+	</ul>
+	</div></li>
 
 	
 	<li class="col-md-4">
@@ -412,8 +425,8 @@ The following status was not transposed yet with the repository structure reorg
 			</ul>
 			
 			</details>
-	</div>
-	</ul></li>
+	</ul>
+	</div></li>
 
 	
 	<li class="col-md-4">
@@ -432,8 +445,8 @@ The following status was not transposed yet with the repository structure reorg
 			</ul>	
 			
 			</details>
-	</div>
-	</ul></li>
+	</ul>
+	</div></li>
 
 	
 	<li class="col-md-4">
@@ -456,8 +469,8 @@ The following status was not transposed yet with the repository structure reorg
 			</ul>
 			
 			</details>
-	</div>
-	</ul></li>
+	</ul>
+	</div></li>
 
 	
 	<li class="col-md-4">
@@ -484,8 +497,8 @@ The following status was not transposed yet with the repository structure reorg
 			</ul>
 			
 			</details>
-	</div>
-	</ul></li>
+	</ul>
+	</div></li>
 
 	
 	<li class="col-md-4">
@@ -516,8 +529,8 @@ The following status was not transposed yet with the repository structure reorg
 			</ul>
 			
 			</details>
-	</div>
-	</ul></li>
+	</ul>
+	</div></li>
 
 	
 	<li class="col-md-4">
@@ -536,8 +549,8 @@ The following status was not transposed yet with the repository structure reorg
 			</ul>
 			
 			</details>
-	</div>
-	</ul></li>
+	</ul>
+	</div></li>
 
 	
 	<li class="col-md-4">
@@ -560,8 +573,8 @@ The following status was not transposed yet with the repository structure reorg
 			</ul>
 			
 			</details>
-	</div>
-	</ul></li>
+	</ul>
+	</div></li>
 
 	
 	<li class="col-md-4">
@@ -580,8 +593,8 @@ The following status was not transposed yet with the repository structure reorg
 			</ul>
 			
 			</details>
-	</div>
-	</ul></li>
+	</ul>
+	</div></li>
 
 	
 	<li class="col-md-4">
@@ -604,8 +617,8 @@ The following status was not transposed yet with the repository structure reorg
 			</ul>
 			
 			</details>
-	</div>
-	</ul></li>
+	</ul>
+	</div></li>
 
 </ul>
 
@@ -613,6 +626,9 @@ The following status was not transposed yet with the repository structure reorg
 
 <p><a href="méli-mélo/méli-mélo-en.html">Consult méli-mélo dedicated page</a></p>
 
+<h2 id="thematics">Promotional thematics</h2>
+
+<p><a href="th%C3%A9matique/gc-th%C3%A9matique-en.html">Consult promotional thematicsdedicated page</a></p>
 
 <h2 id="sitesglobal">Sites and global functionality</h2>
 <ul>
