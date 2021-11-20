@@ -7,7 +7,7 @@ layout: no-container
 lang: en
 ---
 
-{::nomarkdown}
+<div class="container-fluid">
 <div class="row">
 	<div class="col-md-3">
 		<nav class="well well-lg mrgn-tp-lg">
@@ -89,53 +89,20 @@ The following status was not transposed yet with the repository structure reorg
 
 <h2 id="components">Components</h2>
 
-{% assign page_group = site.data.i18n.page_group[ page.lang ] %}
-{% assign comp_status = site.data.i18n.component_status[ page.lang ] %}
-
-<ul class="row list-unstyled wb-eqht">
-{% assign components = site.data.components %}
-{% for component in site.data.components %}
-	{% assign list-pages = component.pages %}
-	<li class="col-md-4">
-		<div class="brdr-tp brdr-rght brdr-bttm brdr-lft">
-			<h3 class="mrgn-tp-md mrgn-rght-md mrgn-bttm-md mrgn-lft-md">{{ component.title[ page.lang ] }} <span class="label label-default small"><span class="wb-inv">State: </span>(State: {{ comp_status[ component.status ] | default: "Undefined" }})</span></h3>
-			<ul class="list-unstyled mrgn-rght-md mrgn-bttm-lg mrgn-lft-md">
-			{% for pgGroup in list-pages %}
-				{% assign grpkey = pgGroup[0] %}
-				<li>{{ page_group[ grpkey ] | default: "Unknown group" }}
-					<ul>
-					{% assign examples = pgGroup[1] | where: "language", page.lang %}
-					{% for example in examples %}
-						{% if example.path %}
-						<li><a href="components/
-									{%- if component.componentName -%}
-										{{ component.componentName }}/
-									{%- endif -%}
-								{{ example.path }}">{{ example.title }}</a></li>
-						{% elsif example.url %}
-							<li><a href="{{ example.url }}">{{ example.title }}</a></li>
-						{% else %}
-							<li>{{ example.title }}</li>
-						{% endif %}
-					{% endfor %}
-					</ul>
-				</li>
-			{% endfor %}
-			</ul>
-		</div>
-	</li>
-{% endfor %}
-</ul>
+<p>List of components here.</p>
 
 <h2 id="templates">Templates</h2>
-<ul>
+<ul class="row list-unstyled wb-eqht">
 
 	
-	<li>Advanced Service - Probably deprecated (État: Stable)
-	<ul>
+	<li class="col-md-4">
+		<div class="brdr-tp brdr-rght brdr-bttm brdr-lft">
+			<h3 class="mrgn-tp-md mrgn-rght-md mrgn-bttm-md mrgn-lft-md">Advanced Service - Probably deprecated <span class="label label-default small"><span class="wb-inv">State: </span>Stable</span></h3>
+			<ul class="list-unstyled mrgn-rght-md mrgn-bttm-lg mrgn-lft-md">
 	
 		
-		<li>Examples
+		<p>Short description of the template</p>
+	<details class="mrgn-tp-lg"><summary>Examples</summary>
 			<ul>
 			
 			
@@ -163,17 +130,19 @@ The following status was not transposed yet with the repository structure reorg
 				<li><a href="templates/advancedservice/page6-en.html" lang="en" hreflang="en">[Service name] - 6. [Step / section page name]</a></li>
 				
 			
-			</ul>
-		</li>
-	
+			</details>
+	</div>
 	</ul></li>
 
 	
-	<li>Campaign name (État: Stable)
-	<ul>
+	<li class="col-md-4">
+		<div class="brdr-tp brdr-rght brdr-bttm brdr-lft">
+			<h3 class="mrgn-tp-md mrgn-rght-md mrgn-bttm-md mrgn-lft-md"><a href="templates/campaign/api.html" lang="en" hreflang="en">Campaign name</a> <span class="label label-default small"><span class="wb-inv">State: </span>Stable</span></h3>
+			<ul class="list-unstyled mrgn-rght-md mrgn-bttm-lg mrgn-lft-md">
 	
 		
-		<li>Examples
+		<p>Short description of the template</p>
+	<details class="mrgn-tp-lg"><summary>Examples</summary>
 			<ul>
 			
 			
@@ -185,29 +154,20 @@ The following status was not transposed yet with the repository structure reorg
 				<li><a href="templates/campaign/campaign2-en.html" lang="en" hreflang="en">Campaign name 2</a></li>
 				
 			
-			</ul>
-		</li>
-	
-		
-		<li>Documentations
-			<ul>
-			
-			
-				
-				<li><a href="templates/campaign/api.html" lang="en" hreflang="en">API documentations</a></li>
-				
-			
-			</ul>
-		</li>
-	
+			</details>
+
+	</div>
 	</ul></li>
 
 	
-	<li>Home (État: Stable)
-	<ul>
+	<li class="col-md-4">
+		<div class="brdr-tp brdr-rght brdr-bttm brdr-lft">
+			<h3 class="mrgn-tp-md mrgn-rght-md mrgn-bttm-md mrgn-lft-md"><a href="templates/home/api.html" lang="en" hreflang="en">Home</a> <span class="label label-default small"><span class="wb-inv">State: </span>Stable</span></h3>
+			<ul class="list-unstyled mrgn-rght-md mrgn-bttm-lg mrgn-lft-md">
 	
 		
-		<li>Examples
+		<p>Short description of the template</p>
+	<details class="mrgn-tp-lg"><summary>Examples</summary>
 			<ul>
 			
 			
@@ -215,29 +175,19 @@ The following status was not transposed yet with the repository structure reorg
 				<li><a href="templates/home/home-en.html" lang="en" hreflang="en">Home - Canada.ca</a></li>
 				
 			
-			</ul>
-		</li>
-	
-		
-		<li>Documentations
-			<ul>
-			
-			
-				
-				<li><a href="templates/home/api.html" lang="en" hreflang="en">API documentations</a></li>
-				
-			
-			</ul>
-		</li>
-	
+			</details>
+	</div>
 	</ul></li>
 
 	
-	<li>Other template (État: Stable)
-	<ul>
+	<li class="col-md-4">
+		<div class="brdr-tp brdr-rght brdr-bttm brdr-lft">
+			<h3 class="mrgn-tp-md mrgn-rght-md mrgn-bttm-md mrgn-lft-md">Other template <span class="label label-default small"><span class="wb-inv">State: </span>Stable</span></h3>
+			<ul class="list-unstyled mrgn-rght-md mrgn-bttm-lg mrgn-lft-md">
 	
 		
-		<li>Examples
+		<p>Short description of the template</p>
+	<details class="mrgn-tp-lg"><summary>Examples</summary>
 			<ul>
 			
 			
@@ -293,17 +243,19 @@ The following status was not transposed yet with the repository structure reorg
 				<li><a href="templates/service-en.html" lang="en" hreflang="en">Service initiation - Might deprecated</a></li>
 				
 			
-			</ul>
-		</li>
-	
+			</details>
+	</div>
 	</ul></li>
 
 	
-	<li>Index (État: Stable)
-	<ul>
+	<li class="col-md-4">
+		<div class="brdr-tp brdr-rght brdr-bttm brdr-lft">
+			<h3 class="mrgn-tp-md mrgn-rght-md mrgn-bttm-md mrgn-lft-md"><a href="templates/index/api.html" lang="en" hreflang="en">Index</a> <span class="label label-default small"><span class="wb-inv">State: </span>Stable</span></h3>
+			<ul class="list-unstyled mrgn-rght-md mrgn-bttm-lg mrgn-lft-md">
 	
 		
-		<li>Examples
+		<p>Short description of the template</p>
+	<details class="mrgn-tp-lg"><summary>Examples</summary>
 			<ul>
 			
 			
@@ -311,29 +263,19 @@ The following status was not transposed yet with the repository structure reorg
 				<li><a href="templates/index/longindex-en.html" lang="en" hreflang="en">[Long index page]</a></li>
 				
 			
-			</ul>
-		</li>
-	
-		
-		<li>Documentations
-			<ul>
-			
-			
-				
-				<li><a href="templates/index/api.html" lang="en" hreflang="en">API documentations</a></li>
-				
-			
-			</ul>
-		</li>
-	
+			</details>
+	</div>
 	</ul></li>
 
 	
-	<li>Institutional profile (État: Stable)
-	<ul>
+	<li class="col-md-4">
+		<div class="brdr-tp brdr-rght brdr-bttm brdr-lft">
+			<h3 class="mrgn-tp-md mrgn-rght-md mrgn-bttm-md mrgn-lft-md">Institutional profile <span class="label label-default small"><span class="wb-inv">State: </span>Stable</span></h3>
+			<ul class="list-unstyled mrgn-rght-md mrgn-bttm-lg mrgn-lft-md">
 	
 		
-		<li>Examples
+		<p>Short description of the template</p>
+	<details class="mrgn-tp-lg"><summary>Examples</summary>
 			<ul>
 			
 			
@@ -357,29 +299,19 @@ The following status was not transposed yet with the repository structure reorg
 				<li><a href="templates/institutional/institution-arms-en.html" lang="en" hreflang="en">arm’s length - [Institution Name]</a></li>
 				
 			
-			</ul>
-		</li>
-	
-		
-		<li>Related documents
-			<ul>
-			
-			
-				
-					<li><a href="https://wet-boew.github.io/themes-dist/theme-gcwu-fegc/institution-en.html" lang="en" hreflang="en">GCWU theme - English institution template</a></li>
-				
-			
-			</ul>
-		</li>
-	
+			</details>
+	</div>
 	</ul></li>
 
 	
-	<li>Laws and regulations pages (État: Stable)
-	<ul>
+	<li class="col-md-4">
+		<div class="brdr-tp brdr-rght brdr-bttm brdr-lft">
+			<h3 class="mrgn-tp-md mrgn-rght-md mrgn-bttm-md mrgn-lft-md">Laws and regulations pages <span class="label label-default small"><span class="wb-inv">State: </span>Stable</span></h3>
+			<ul class="list-unstyled mrgn-rght-md mrgn-bttm-lg mrgn-lft-md">
 	
 		
-		<li>Examples
+		<p>Short description of the template</p>
+	<details class="mrgn-tp-lg"><summary>Examples</summary>
 			<ul>
 			
 			
@@ -391,29 +323,19 @@ The following status was not transposed yet with the repository structure reorg
 				<li><a href="templates/legislation/regulations-en.html" lang="en" hreflang="en">[Regulation name] <small>([NN-XX])</small></a></li>
 				
 			
-			</ul>
-		</li>
-	
-		
-		<li>Specification
-			<ul>
-			
-			
-				
-					<li><a href="https://design.canada.ca/recommended-templates/laws-regulations-pages.html" lang="en" hreflang="en">Laws and regulations pages - Canada.ca template</a></li>
-				
-			
-			</ul>
-		</li>
-	
+			</details>
+	</div>
 	</ul></li>
 
 	
-	<li>Local navigation (État: Stable)
-	<ul>
+	<li class="col-md-4">
+		<div class="brdr-tp brdr-rght brdr-bttm brdr-lft">
+			<h3 class="mrgn-tp-md mrgn-rght-md mrgn-bttm-md mrgn-lft-md">Local navigation <span class="label label-default small"><span class="wb-inv">State: </span>Stable</span></h3>
+			<ul class="list-unstyled mrgn-rght-md mrgn-bttm-lg mrgn-lft-md">
 	
 		
-		<li>Examples
+		<p>Short description of the template</p>
+	<details class="mrgn-tp-lg"><summary>Examples</summary>
 			<ul>
 			
 			
@@ -485,29 +407,19 @@ The following status was not transposed yet with the repository structure reorg
 				<li><a href="templates/localnav/task4/index-en.html" lang="en" hreflang="en">Task 4</a></li>
 				
 			
-			</ul>
-		</li>
-	
+			</details>
+	</div>
 	</ul></li>
 
 	
-	<li>Ministerial profile (État: Stable)
-	<ul>
+	<li class="col-md-4">
+		<div class="brdr-tp brdr-rght brdr-bttm brdr-lft">
+			<h3 class="mrgn-tp-md mrgn-rght-md mrgn-bttm-md mrgn-lft-md"><a href="templates/ministerial/ministerial-doc-en.html" lang="en" hreflang="en">Ministerial profile</a> <span class="label label-default small"><span class="wb-inv">State: </span>Stable</span></h3>
+			<ul class="list-unstyled mrgn-rght-md mrgn-bttm-lg mrgn-lft-md">
 	
 		
-		<li>Documentations
-			<ul>
-			
-			
-				
-				<li><a href="templates/ministerial/ministerial-doc-en.html" lang="en" hreflang="en">Ministerial profile page</a></li>
-				
-			
-			</ul>
-		</li>
-	
-		
-		<li>Examples
+		<p>Short description of the template</p>
+	<details class="mrgn-tp-lg"><summary>Examples</summary>
 			<ul>
 			
 			
@@ -519,17 +431,19 @@ The following status was not transposed yet with the repository structure reorg
 				<li><a href="templates/ministerial/ministerial-reduced-en.html" lang="en" hreflang="en">Ministerial profile - swearing-in day</a></li>
 				
 			
-			</ul>
-		</li>
-	
+			</details>
+	</div>
 	</ul></li>
 
 	
-	<li>News (État: Stable)
-	<ul>
+	<li class="col-md-4">
+		<div class="brdr-tp brdr-rght brdr-bttm brdr-lft">
+			<h3 class="mrgn-tp-md mrgn-rght-md mrgn-bttm-md mrgn-lft-md">News <span class="label label-default small"><span class="wb-inv">State: </span>Stable</span></h3>
+			<ul class="list-unstyled mrgn-rght-md mrgn-bttm-lg mrgn-lft-md">
 	
 		
-		<li>Examples
+		<p>Short description of the template</p>
+	<details class="mrgn-tp-lg"><summary>Examples</summary>
 			<ul>
 			
 			
@@ -537,17 +451,19 @@ The following status was not transposed yet with the repository structure reorg
 				<li><a href="templates/news/news-en.html" lang="en" hreflang="en">News</a></li>
 				
 			
-			</ul>
-		</li>
-	
+			</details>
+	</div>
 	</ul></li>
 
 	
-	<li>Organizational profile (État: Stable)
-	<ul>
+	<li class="col-md-4">
+		<div class="brdr-tp brdr-rght brdr-bttm brdr-lft">
+			<h3 class="mrgn-tp-md mrgn-rght-md mrgn-bttm-md mrgn-lft-md">Organizational profile <span class="label label-default small"><span class="wb-inv">State: </span>Stable</span></h3>
+			<ul class="list-unstyled mrgn-rght-md mrgn-bttm-lg mrgn-lft-md">
 	
 		
-		<li>Examples
+		<p>Short description of the template</p>
+	<details class="mrgn-tp-lg"><summary>Examples</summary>
 			<ul>
 			
 			
@@ -559,17 +475,19 @@ The following status was not transposed yet with the repository structure reorg
 				<li><a href="templates/organizational/organizational-arms-en.html" lang="en" hreflang="en">arm’s length - [Organization Name]</a></li>
 				
 			
-			</ul>
-		</li>
-	
+			</details>
+	</div>
 	</ul></li>
 
 	
-	<li>Search results (État: Stable)
-	<ul>
+	<li class="col-md-4">
+		<div class="brdr-tp brdr-rght brdr-bttm brdr-lft">
+			<h3 class="mrgn-tp-md mrgn-rght-md mrgn-bttm-md mrgn-lft-md"><a href="templates/search/api.html" lang="en" hreflang="en">Search results</a> <span class="label label-default small"><span class="wb-inv">State: </span>Stable</span></h3>
+			<ul class="list-unstyled mrgn-rght-md mrgn-bttm-lg mrgn-lft-md">
 	
 		
-		<li>Examples
+		<p>Short description of the template</p>
+	<details class="mrgn-tp-lg"><summary>Examples</summary>
 			<ul>
 			
 			
@@ -585,41 +503,19 @@ The following status was not transposed yet with the repository structure reorg
 				<li><a href="templates/search/results-contextual-en.html" lang="en" hreflang="en">Contextual</a></li>
 				
 			
-			</ul>
-		</li>
-	
-		
-		<li>Documentations
-			<ul>
-			
-			
-				
-				<li><a href="templates/search/api.html" lang="en" hreflang="en">API documentations</a></li>
-				
-			
-			</ul>
-		</li>
-	
-		
-		<li>Implementation reference
-			<ul>
-			
-			
-				
-				<li><a href="templates/search/test-pagination.html" lang="en" hreflang="en">Pagination for search templates</a></li>
-				
-			
-			</ul>
-		</li>
-	
+			</details>
+	</div>
 	</ul></li>
 
 	
-	<li>Server error message (État: Stable)
-	<ul>
+	<li class="col-md-4">
+		<div class="brdr-tp brdr-rght brdr-bttm brdr-lft">
+			<h3 class="mrgn-tp-md mrgn-rght-md mrgn-bttm-md mrgn-lft-md">Server error message <span class="label label-default small"><span class="wb-inv">State: </span>Stable</span></h3>
+			<ul class="list-unstyled mrgn-rght-md mrgn-bttm-lg mrgn-lft-md">
 	
 		
-		<li>Examples
+		<p>Short description of the template</p>
+	<details class="mrgn-tp-lg"><summary>Examples</summary>
 			<ul>
 			
 			
@@ -639,17 +535,19 @@ The following status was not transposed yet with the repository structure reorg
 				<li><a href="templates/servermessage/servermessage-en-fr.html" lang="en" hreflang="en">Message title - Canada.ca theme / Titre du message - Thème Canada.ca</a></li>
 				
 			
-			</ul>
-		</li>
-	
+			</details>
+	</div>
 	</ul></li>
 
 	
-	<li>Splash page - Canada.ca (État: Stable)
-	<ul>
+	<li class="col-md-4">
+		<div class="brdr-tp brdr-rght brdr-bttm brdr-lft">
+			<h3 class="mrgn-tp-md mrgn-rght-md mrgn-bttm-md mrgn-lft-md">Splash page - Canada.ca <span class="label label-default small"><span class="wb-inv">State: </span>Stable</span></h3>
+			<ul class="list-unstyled mrgn-rght-md mrgn-bttm-lg mrgn-lft-md">
 	
 		
-		<li>Examples
+		<p>Short description of the template</p>
+	<details class="mrgn-tp-lg"><summary>Examples</summary>
 			<ul>
 			
 			
@@ -657,17 +555,19 @@ The following status was not transposed yet with the repository structure reorg
 				<li><a href="templates/splash/splashpage.html" lang="en" hreflang="en">Splash page example</a></li>
 				
 			
-			</ul>
-		</li>
-	
+			</details>
+	</div>
 	</ul></li>
 
 	
-	<li>Thematic (État: Provisional)
-	<ul>
+	<li class="col-md-4">
+		<div class="brdr-tp brdr-rght brdr-bttm brdr-lft">
+			<h3 class="mrgn-tp-md mrgn-rght-md mrgn-bttm-md mrgn-lft-md">Thematic <span class="label label-default small"><span class="wb-inv">State: </span>Provisional</span></h3>
+			<ul class="list-unstyled mrgn-rght-md mrgn-bttm-lg mrgn-lft-md">
 	
 		
-		<li>Examples
+		<p>Short description of the template</p>
+	<details class="mrgn-tp-lg"><summary>Examples</summary>
 			<ul>
 			
 			
@@ -679,17 +579,19 @@ The following status was not transposed yet with the repository structure reorg
 				<li><a href="templates/thematic/dark-theme-en.html" lang="en" hreflang="en">Dark theme</a></li>
 				
 			
-			</ul>
-		</li>
-	
+			</details>
+	</div>
 	</ul></li>
 
 	
-	<li>Beta - Theme, Topic (État: Provisional)
-	<ul>
+	<li class="col-md-4">
+		<div class="brdr-tp brdr-rght brdr-bttm brdr-lft">
+			<h3 class="mrgn-tp-md mrgn-rght-md mrgn-bttm-md mrgn-lft-md">Beta - Theme, Topic <span class="label label-default small"><span class="wb-inv">State: </span>Provisional</span></h3>
+			<ul class="list-unstyled mrgn-rght-md mrgn-bttm-lg mrgn-lft-md">
 	
 		
-		<li>Examples
+		<p>Short description of the template</p>
+	<details class="mrgn-tp-lg"><summary>Examples</summary>
 			<ul>
 			
 			
@@ -697,17 +599,19 @@ The following status was not transposed yet with the repository structure reorg
 				<li><a href="templates/theme-topic/theme-topic-en.html" lang="en" hreflang="en">[Theme - Topic title]</a></li>
 				
 			
-			</ul>
-		</li>
-	
+			</details>
+	</div>
 	</ul></li>
 
 	
-	<li>Topic (État: Stable)
-	<ul>
+	<li class="col-md-4">
+		<div class="brdr-tp brdr-rght brdr-bttm brdr-lft">
+			<h3 class="mrgn-tp-md mrgn-rght-md mrgn-bttm-md mrgn-lft-md">Topic <span class="label label-default small"><span class="wb-inv">State: </span>Stable</span></h3>
+			<ul class="list-unstyled mrgn-rght-md mrgn-bttm-lg mrgn-lft-md">
 	
 		
-		<li>Examples
+		<p>Short description of the template</p>
+	<details class="mrgn-tp-lg"><summary>Examples</summary>
 			<ul>
 			
 			
@@ -719,9 +623,8 @@ The following status was not transposed yet with the repository structure reorg
 				<li><a href="templates/topic/topic-testcase-1-en.html" lang="en" hreflang="en">[Topic title, test case 1]</a></li>
 				
 			
-			</ul>
-		</li>
-	
+			</details>
+	</div>
 	</ul></li>
 
 </ul>
@@ -905,4 +808,5 @@ docker run -it --rm -v "$PWD":/usr/src/app -p "4000:4000" --env JEKYLL_OPTIONS='
 
 <p>Note: A manual update is required if you have specified a version for your jekyll remote theme in your <code class="language-plaintext highlighter-rouge">config.yml</code> file.</p>
 	</div>
+</div>
 </div>
