@@ -6,58 +6,38 @@ description: "Home page describing all the components of the Canada.ca theme, na
 layout: no-container
 lang: en
 ---
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"/>
 
-<div class="container-fluid">
-<div class="row">
-	<div class="col-md-3">
-		<nav class="well well-lg mrgn-tp-lg">
-	<h2 class="mrgn-tp-md">Table of content</h2>
-			<ul class="list-unstyled">
-	<li class="mrgn-bttm-md"><a href="#"><span class="glyphicon glyphicon-ok-circle mrgn-rght-md" aria-hidden="true"></span><strong>Get started</strong></a></li>
-<li class="mrgn-bttm-md"><a href="#"><strong>Components</strong></a>
-		<ul>
-			<li><a href="#">Stable</a></li>
-			<li><a href="#">Provisional</a></li>
-			</ul></li>
-<li class="mrgn-bttm-md"><a href="#"><strong>Templates</strong></a>
-		<ul>
-			<li><a href="#">Stable</a></li>
-			<li><a href="#">Provisional</a></li>
-	
-			</ul></li>
-<li class="mrgn-bttm-md"><a href="#"><strong>Méli-mélo</strong></a></li><a href="#">
-</a><li class="mrgn-bttm-md"><a href="#"></a><a href="#"><strong>Sites and global functionality</strong></a></li><a href="#">
-</a><li class="mrgn-bttm-md"><a href="#"></a><a href="#"><strong>Others</strong>
-		</a><ul><a href="#">
-			</a><li><a href="#"></a><a href="#">WET-BOEW feature demos styled with Canada.ca theme</a></li>
-			<li><a href="#">More documentation</a></li>
-			</ul></li>
-	<li class="mrgn-bttm-lg"><a href="#"><strong><span class="glyphicon glyphicon-console mrgn-rght-md" aria-hidden="true"></span>Developing for GCWeb</strong></a></li>
-</ul>
-		</nav>
-	</div>
-	<div class="col-md-8">
-<h1 id="wb-cont" property="name">GCWeb, the WET-BOEW Canada.ca theme</h1>
-<div class="row">
-	<div class="col-md-7 col-lg-8">
-		<p>The page templates and design patterns below comprise a reference implementation of the <a href="https://design.canada.ca">Canada.ca design system</a>, including the mandatory requirement of the Content and Information Architecture (C&amp;IA) Specification. Government of Canada departments and agencies can contribute additional patterns and templates via <a href="https://github.com/wet-boew/GCWeb">GCWeb github repository</a>.</p>
-	</div>
-	<div class="col-xs-12 col-md-auto pull-right">
-		<p><a href="https://github.com/wet-boew/GCWeb/archive/v9.5.0.zip" class="btn btn-primary">Download GCWeb theme <strong>v9.5.0</strong></a><br>
-			<small>(<time>2021-08-06</time> - <a href="https://github.com/wet-boew/gcweb/releases/tag/v9.5.0">Release notes</a>)</small></p>
+<div class="container">
+	<h1 id="wb-cont" property="name">GCWeb, the WET-BOEW Canada.ca theme</h1>
+	<div class="row">
+		<div class="col-md-7 col-lg-8">
+			<p>The page templates and design patterns below comprise a reference implementation of the <a href="https://design.canada.ca">Canada.ca design system</a>, including the mandatory requirement of the Content and Information Architecture (C&amp;IA) Specification. Government of Canada departments and agencies can contribute additional patterns and templates via <a href="https://github.com/wet-boew/GCWeb">GCWeb github repository</a>.</p>
+		</div>
+		<div class="col-xs-12 col-md-auto pull-right">
+			<p><a href="https://github.com/wet-boew/GCWeb/archive/v9.5.0.zip" class="btn btn-primary">Download GCWeb theme <strong>v9.5.0</strong></a><br>
+				<small>(<time>2021-08-06</time> - <a href="https://github.com/wet-boew/gcweb/releases/tag/v9.5.0">Release notes</a>)</small></p>
+		</div>
 	</div>
 </div>
-
-<ul class="colcount-md-2">
-	<li><a href="docs/index.html">GCWeb v5 Summary and others technical notes</a></li>
-	<li><a href="docs/implementing.html">Implementing GCWeb</a></li>
-	<li><a href="#components">Components</a></li>
-	<li><a href="#templates">Templates</a></li>
-	<li><a href="méli-mélo/méli-mélo-en.html">Méli-mélo features</a></li>
-	<li><a href="thématique/gc-thématique-en.html">GC promotional thematic</a></li>
-	<li><a href="#sitesglobal">Sites and global functionality</a></li>
-</ul>
-
+<div class="container-fluid">
+	<div class="row">
+		<nav class="well well-lg well-bold mrgn-tp-md">
+			<div class="container">
+				<h2 class="mrgn-tp-0">Get started</h2>
+				<ul class="list-unstyled colcount-md-2">
+					<li class="mrgn-bttm-md"><a href="#components">Components</a></li>
+					<li><a href="#templates">Templates</a></li>
+					<li><a href="méli-mélo/méli-mélo-en.html">Méli-mélo</a></li>
+					<li><a href="#sitesglobal">Sites and global functionality</a></li>
+					<li><a href="#">Others</a></li>
+					<li class="mrgn-bttm-lg"><a href="#"><span class="glyphicon glyphicon-console mrgn-rght-md" aria-hidden="true"></span>Developing for GCWeb</a></li>
+				</ul>
+			</div>
+		</nav>
+	</div>
+</div>
+<div class="container">
 <p><small>Found an C&amp;IA implementation issue or you want to contribute at their development, let us know by submiting <a href="https://github.com/wet-boew/GCWeb/issues/new?title=C&amp;IA%20implementation%20error:%20">GCweb issue</a>, sending <a href="https://github.com/wet-boew/GCWeb/pulls">pull request</a> or by participating at one of our <a href="https://wet-boew.github.io/wet-boew-documentation/index-en.html#wet-boew-code-sprint">WET-BOEW weekly Tuesday code sprint</a>.</small></p>
 
 <!--
@@ -128,7 +108,7 @@ The following status was not transposed yet with the repository structure reorg
 			
 				
 				<li><a href="templates/advancedservice/page6-en.html" lang="en" hreflang="en">[Service name] - 6. [Step / section page name]</a></li>
-				
+			</ul>
 			
 			</details>
 	</div>
@@ -152,7 +132,7 @@ The following status was not transposed yet with the repository structure reorg
 			
 				
 				<li><a href="templates/campaign/campaign2-en.html" lang="en" hreflang="en">Campaign name 2</a></li>
-				
+			</ul>
 			
 			</details>
 
@@ -173,7 +153,7 @@ The following status was not transposed yet with the repository structure reorg
 			
 				
 				<li><a href="templates/home/home-en.html" lang="en" hreflang="en">Home - Canada.ca</a></li>
-				
+			</ul>
 			
 			</details>
 	</div>
@@ -241,7 +221,7 @@ The following status was not transposed yet with the repository structure reorg
 			
 				
 				<li><a href="templates/service-en.html" lang="en" hreflang="en">Service initiation - Might deprecated</a></li>
-				
+			</ul>
 			
 			</details>
 	</div>
@@ -261,7 +241,7 @@ The following status was not transposed yet with the repository structure reorg
 			
 				
 				<li><a href="templates/index/longindex-en.html" lang="en" hreflang="en">[Long index page]</a></li>
-				
+			</ul>
 			
 			</details>
 	</div>
@@ -297,7 +277,7 @@ The following status was not transposed yet with the repository structure reorg
 			
 				
 				<li><a href="templates/institutional/institution-arms-en.html" lang="en" hreflang="en">arm’s length - [Institution Name]</a></li>
-				
+			</ul>
 			
 			</details>
 	</div>
@@ -321,7 +301,7 @@ The following status was not transposed yet with the repository structure reorg
 			
 				
 				<li><a href="templates/legislation/regulations-en.html" lang="en" hreflang="en">[Regulation name] <small>([NN-XX])</small></a></li>
-				
+			</ul>
 			
 			</details>
 	</div>
@@ -405,7 +385,7 @@ The following status was not transposed yet with the repository structure reorg
 			
 				
 				<li><a href="templates/localnav/task4/index-en.html" lang="en" hreflang="en">Task 4</a></li>
-				
+			</ul>
 			
 			</details>
 	</div>
@@ -429,7 +409,7 @@ The following status was not transposed yet with the repository structure reorg
 			
 				
 				<li><a href="templates/ministerial/ministerial-reduced-en.html" lang="en" hreflang="en">Ministerial profile - swearing-in day</a></li>
-				
+			</ul>
 			
 			</details>
 	</div>
@@ -449,7 +429,7 @@ The following status was not transposed yet with the repository structure reorg
 			
 				
 				<li><a href="templates/news/news-en.html" lang="en" hreflang="en">News</a></li>
-				
+			</ul>	
 			
 			</details>
 	</div>
@@ -473,7 +453,7 @@ The following status was not transposed yet with the repository structure reorg
 			
 				
 				<li><a href="templates/organizational/organizational-arms-en.html" lang="en" hreflang="en">arm’s length - [Organization Name]</a></li>
-				
+			</ul>
 			
 			</details>
 	</div>
@@ -501,7 +481,7 @@ The following status was not transposed yet with the repository structure reorg
 			
 				
 				<li><a href="templates/search/results-contextual-en.html" lang="en" hreflang="en">Contextual</a></li>
-				
+			</ul>
 			
 			</details>
 	</div>
@@ -533,7 +513,7 @@ The following status was not transposed yet with the repository structure reorg
 			
 				
 				<li><a href="templates/servermessage/servermessage-en-fr.html" lang="en" hreflang="en">Message title - Canada.ca theme / Titre du message - Thème Canada.ca</a></li>
-				
+			</ul>
 			
 			</details>
 	</div>
@@ -553,7 +533,7 @@ The following status was not transposed yet with the repository structure reorg
 			
 				
 				<li><a href="templates/splash/splashpage.html" lang="en" hreflang="en">Splash page example</a></li>
-				
+			</ul>
 			
 			</details>
 	</div>
@@ -577,7 +557,7 @@ The following status was not transposed yet with the repository structure reorg
 			
 				
 				<li><a href="templates/thematic/dark-theme-en.html" lang="en" hreflang="en">Dark theme</a></li>
-				
+			</ul>
 			
 			</details>
 	</div>
@@ -597,7 +577,7 @@ The following status was not transposed yet with the repository structure reorg
 			
 				
 				<li><a href="templates/theme-topic/theme-topic-en.html" lang="en" hreflang="en">[Theme - Topic title]</a></li>
-				
+			</ul>
 			
 			</details>
 	</div>
@@ -621,7 +601,7 @@ The following status was not transposed yet with the repository structure reorg
 			
 				
 				<li><a href="templates/topic/topic-testcase-1-en.html" lang="en" hreflang="en">[Topic title, test case 1]</a></li>
-				
+			</ul>
 			
 			</details>
 	</div>
