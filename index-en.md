@@ -30,23 +30,23 @@ lang: en
 					<li><a href="#templates"><span aria-hidden="true" class="fas fa-table mrgn-rght-md"></span>Templates</a></li>
 					<li><a href="méli-mélo/méli-mélo-en.html"><span aria-hidden="true" class="fas fa-puzzle-piece mrgn-rght-md"></span>Méli-mélo and thematics</a></li>
 					<li><a href="#sitesglobal"><span aria-hidden="true" class="fas fa-globe mrgn-rght-md"></span>Sites and global functionality</a></li>
-					<li><a href="#gcweb-project-documentation"><span aria-hidden="true" class="fas fa-info-circle mrgn-rght-md"></span>Other documentation</a></li>
+					<li><a href="#other"><span aria-hidden="true" class="fas fa-info-circle mrgn-rght-md"></span>Other documentation</a></li>
 					<li><a href="#developping-for-gcweb"><span aria-hidden="true" class="fas fa-code mrgn-rght-md"></span>Developing for GCWeb</a></li>
 				</ul>
 			</div>
 		</nav>
 	</div>
 </div>
-<section id="nav-menu" class="wb-overlay modal-content overlay-def wb-bar-t wb-init wb-overlay-inited outside-off open hidden-xs" aria-hidden="false">
+<section id="nav-menu" class="wb-overlay modal-content overlay-def wb-bar-t hidden-xs" aria-hidden="true">
 <header class="pull-left">
-<h2 class="modal-title">Get started</h2>
+	<h2 class="modal-title">Get started</h2>
 </header>
-<ul class="pull-left list-inline mrgn-lft-md mrgn-tp-md small">
+<ul class="pull-left list-inline mrgn-lft-md mrgn-tp-sm">
 	<li><a href="#components" class="btn btn-link text-white"><span aria-hidden="true" class="fas fa-cube mrgn-rght-md"></span>Components</a></li>
 	<li class="mrgn-lft-md"><a href="#templates" class="btn btn-link text-white"><span aria-hidden="true" class="fas fa-table mrgn-rght-md"></span>Templates</a></li>
 	<li class="mrgn-lft-md"><a href="méli-mélo/méli-mélo-en.html" class="btn btn-link text-white"><span aria-hidden="true" class="fas fa-puzzle-piece mrgn-rght-md"></span>Méli-mélo and thematics</a></li>
 	<li class="mrgn-lft-md"><a href="#sitesglobal" class="btn btn-link text-white"><span aria-hidden="true" class="fas fa-globe mrgn-rght-md"></span>Sites and global</a></li>
-	<li class="mrgn-lft-md"><a href="#gcweb-project-documentation" class="btn btn-link text-white"><span aria-hidden="true" class="fas fa-info-circle mrgn-rght-md"></span>Other</a></li>
+	<li class="mrgn-lft-md"><a href="#other" class="btn btn-link text-white"><span aria-hidden="true" class="fas fa-info-circle mrgn-rght-md"></span>Other</a></li>
 	<li class="mrgn-lft-md"><a href="#developping-for-gcweb" class="btn btn-link text-white"><span aria-hidden="true" class="fas fa-code mrgn-rght-md"></span>Developing for GCWeb</a></li>
 </ul>
 </section>
@@ -622,13 +622,19 @@ The following status was not transposed yet with the repository structure reorg
 
 </ul>
 
-<h2 id="méli-mélo">Méli-mélo</h2>
+<div class="container-fluid">
+	<div class="row">
+		<div class="well well-lg mrgn-tp-md bg-gctheme text-white">
+			<div class="container mrgn-bttm-lg">
+                <h2 id="méli-mélo">Méli-mélo</h2>
 
-<p><a href="méli-mélo/méli-mélo-en.html">Consult méli-mélo dedicated page</a></p>
+                <p>This is the experimentation hub you have been waiting for! Méli-mélos allow you to bring in some awesome new stuff.</p>
 
-<h2 id="thematics">Promotional thematics</h2>
-
-<p><a href="th%C3%A9matique/gc-th%C3%A9matique-en.html">Consult promotional thematicsdedicated page</a></p>
+                <p class="mrgn-tp-lg"><a href="méli-mélo/méli-mélo-en.html" class="btn btn-default btn-lg">Consult méli-mélo dedicated page</a></p>
+            </div>
+        </div>
+    </div>
+</div>
 
 <h2 id="sitesglobal">Sites and global functionality</h2>
 <ul>
@@ -689,10 +695,15 @@ The following status was not transposed yet with the repository structure reorg
 
 </ul>
 
-<h2>WET-BOEW feature demos styled with Canada.ca theme</h2>
+<h2 id="other">Other documentation</h2>
+
+<h3 id="thematics">Promotional thematics</h3>
+<p><a href="th%C3%A9matique/gc-th%C3%A9matique-en.html">Consult promotional thematicsdedicated page</a></p>
+
+<h3>WET-BOEW feature demos styled with Canada.ca theme</h3>
 <p><a href="/gcweb-compiled-demos/index.html#wet-boew">WET-BOEW feature overview</a></p>
 
-<h2 id="gcweb-project-documentation">GCWeb project documentation</h2>
+<h3 id="gcweb-project-documentation">GCWeb project documentation</h3>
 
 <ul>
   <li><a href="/GCWeb/docs/">GCWeb theme - Meta information</a></li>
