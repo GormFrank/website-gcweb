@@ -79,7 +79,6 @@ lang: en
 		<dd>Do not use because it's deprecated, but listed here for your information.</dd>-->
 	</dl>
 </details>
--->
 
 <h2 id="components">Components</h2>
 
@@ -638,7 +637,6 @@ lang: en
 					    <div class="col-md-6">
 						<h3 id="thematics">Promotional thematics</h3><p>This is the experimentation hub you have been waiting for! Méli-mélos allow you to bring in some awesome new stuff.</p>
 						<p class="mrgn-tp-lg"><a href="th%C3%A9matique/gc-th%C3%A9matique-en.html" class="btn btn-default btn-lg">Learn more<span class="wb-inv"> about promotional thematics</span></a></p>
-					 </div>
 				</div>
 			</div>
         	</div>
