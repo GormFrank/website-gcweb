@@ -3,19 +3,19 @@ title: Méli-mélo features
 description: Reusable features that are into a preliminary state of experimentation.
 lang: en
 altLangPage: méli-mélo-fr.html
-dateModified": 2022-04-19
+dateModified": 2022-04-21
 ---
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"/>
 
 <p class="lead">Reusable features that are into a preliminary state of experimentation. Features are built from custom CSS and/or Javascript code. Once a feature is developed and minimum requirements are met, a méli-mélo can be deployed and ready for use within weeks. Check out <a href="#mli-mlo-list">existing mélis-mélos</a>.</p>
 
 <div class="alert alert-info">
-	<p><strong>Did you know?</strong> Support for méli-mélo is provided during weekly <a href="https://github.com/wet-boew/wet-boew/wiki/WET-BOEW-Code-sprint">WET Office hours</a> hold remotely every Tuesday afternoon.</p>
+	<p><strong>Did you know?</strong> Support for méli-mélo is provided during weekly <a href="https://github.com/wet-boew/wet-boew/wiki/WET-Office-hours,-Heures-de-service-de-la-BOEW">WET Office hours</a> hold remotely every Tuesday afternoon.</p>
 </div>
 
 <h2 id="mli-mlo-comp">Compilations</h2>
 
-<p><strong>Every compilation's life expectancy is estimated to be less than one (1) year</strong>, after which point it becomes "frozen" (expired). This should provide a feature's sponsor enough time to find resources to make their feature progressing towards an official GCWeb feature. Using a <a href="compilation-gelé/index.html" hreflang="fr">frozen méli-mélo compilation</a> into any web page is not recommended.</p>
+<p><strong>Every compilation's life expectancy is estimated to be approximately one (1) year</strong>, after which point it becomes "frozen" (deprecated). This should provide a feature's sponsor enough time to find resources to make their feature progressing towards an official GCWeb feature. Using a <a href="compilation-gelé/index.html" hreflang="fr">frozen méli-mélo compilation</a> into any web page is not recommended.</p>
 
 <p>Features are grouped into compilations in order to quickly:</p>
 <ul>
@@ -28,21 +28,38 @@ dateModified": 2022-04-19
 
 <ul class="row list-unstyled wb-eqht-grd mrgn-tp-md">
 
-{% for item in site.data[ "mli-mlo" ].packages %}
+
 	<li class="col-xs-12 col-md-4 mrgn-tp-md mrgn-bttm-md">
 		<div class="brdr-tp brdr-rght brdr-bttm brdr-lft hght-inhrt">
-			<h4 class="mrgn-tp-md mrgn-rght-md mrgn-bttm-md mrgn-lft-md">{{ item.nom }}</h4>
+			<h4 class="mrgn-tp-md mrgn-rght-md mrgn-bttm-md mrgn-lft-md">2022-06-banff</h4>
 			<div class="mrgn-rght-md mrgn-bttm-md mrgn-lft-md">
 				<ul class="mrgn-bttm-lg mrgn-lft-md">
-				{% for pack in item.libs %}
-					{% assign indexPage = site.data[ "mli-mlo" ].subProjects | where: "nom", pack | first %}
-					<li><a href="/gcweb-compiled-demos/méli-mélo-demos/{{ item.nom }}/{{ pack }}/{{ indexPage.mainpage }}">{{ pack }}</a></li>
-				{% endfor %}
-				</ul>
-			</div>
+				
+					
+					<li><a href="/gcweb-compiled-demos/méli-mélo-demos/2022-06-banff/2021-05-steps/index.html">2021-05-steps</a></li>
+				
+					
+					<li><a href="/gcweb-compiled-demos/méli-mélo-demos/2022-06-banff/2021-05-conjunction/index.html">2021-05-conjunction</a></li>
+				
+			</ul>
 		</div>
-	</li>
-{% endfor %}
+	</div>
+</li>
+
+	<li class="col-xs-12 col-md-4 mrgn-tp-md mrgn-bttm-md">
+		<div class="brdr-tp brdr-rght brdr-bttm brdr-lft hght-inhrt">
+			<h4 class="mrgn-tp-md mrgn-rght-md mrgn-bttm-md mrgn-lft-md">gc-thématique</h4>
+			<div class="mrgn-rght-md mrgn-bttm-md mrgn-lft-md">
+				<ul class="mrgn-bttm-lg mrgn-lft-md">
+				
+					
+					<li><a href="/gcweb-compiled-demos/méli-mélo-demos/gc-thématique/th-canadaday/canada-day.html">th-canadaday</a></li>
+				
+			</ul>
+		</div>
+	</div>
+</li>
+
 </ul>
 
 <p><small>(<a href="compilation-gelé/index.html" hreflang="fr">View frozen and deprecated méli-mélo compilations (in French only)</a>.)</small></p>
@@ -60,11 +77,11 @@ dateModified": 2022-04-19
 		</li>
 		<li class="checkbox">
 			<input type="checkbox" id="req2">
-			<label for="req2">Must not contain any interference with WET-BOEW &amp; GCWeb, meaning no component override nor extension (such customization should be contributed in the <a href="../components/provisional-en.html">provisional</a> or stable component instead);</label>
+			<label for="req2">Must not contain any interference with WET-BOEW &amp; GCWeb, meaning no component override nor conflict. Component extension should be contributed in the <a href="../components/provisional-en.html">provisional</a> or stable component instead;</label>
 		</li>
 		<li class="checkbox">
 			<input type="checkbox" id="req3">
-			<label for="req3">Must be built with accessibility in mind. Conformance remains the responsibility of the publisher when implementing the feature into a web page;</label>
+			<label for="req3">Must be built with accessibility and security in mind. Accessibility conformance remains the responsibility of the publisher when implementing the feature into a web page;</label>
 		</li>
 		<li class="checkbox">
 			<input type="checkbox" id="req4">
@@ -107,9 +124,9 @@ dateModified": 2022-04-19
 	<li><strong>Optional:</strong> Test your code by following the instructions on <a href="../docs/developing-en.html">developing for GCWeb</a>.</li>
 	<li>Submit your new feature through a GitHub Pull request (PR) in the GCWeb repository; please consult <a href="https://github.com/wet-boew/GCWeb/blob/master/CONTRIBUTING.md">contribution guidelines</a>.</li>
 	<li>If changes are requested on your PR after technical review (as per <a href="#tech-checklist">checklist below</a>), collaborate with the WET-BOEW team to get it approved.</li>
-	<li>Once your PR is approved, it will be assigned to a <a href="#mli-mlo-comp">méli-mélo compilation</a> and released on Canada.ca at the next release window between 1 to 3 weeks.</li>
+	<li>Once your PR is approved, your feature will be assigned to a <a href="#mli-mlo-comp">méli-mélo compilation</a> and released on Canada.ca at the next release window between 1 to 3 weeks.</li>
 	<li><strong>Strongly recommended:</strong> After release, update the méli-mélo feature code by executing the implementation plan and addressing all TODO's identified by the WET-BOEW team.</li>
-	<li><strong>Recommended:</strong> Whenever possible, participate at the weekly <a href="https://github.com/wet-boew/wet-boew/wiki/WET-BOEW-Code-sprint">WET Office hours</a> on Tuesday afternoon.</li>
+	<li><strong>Recommended:</strong> Whenever possible, participate at the weekly <a href="https://github.com/wet-boew/wet-boew/wiki/WET-Office-hours,-Heures-de-service-de-la-BOEW">WET Office hours</a> on Tuesday afternoon.</li>
 </ol>
 
 <p class="mrgn-tp-lg">See <a href="2021-05-steps/index.html">2021-05-steps</a> and its <a href="https://github.com/wet-boew/GCWeb/tree/master/m%C3%A9li-m%C3%A9lo/2021-05-steps">folder on GitHub</a> as a complete example of a méli-mélo feature containing all the required information.</p>
@@ -121,11 +138,11 @@ dateModified": 2022-04-19
 	<ul>
 		<li>Ensure the <a href="#sponsor">project sponsor</a> is clearly identified;</li>
 		<li>Project folder name follows the proper naming convention;</li>
-		<li>Each JavaScript feature and each CSS style comes with a demo / working example;</li>
+		<li>Ensure each JavaScript feature and each CSS style comes with a demo / working example;</li>
 		<li>Perform a code review to ensure there are no overrides nor conflict with GCWeb and/or WET-BOEW;</li>
-		<li>Quick check for any major or obvious web accessibility and security issue;</li>
+		<li>Perform a quick check for any major or obvious web accessibility and security issue;</li>
 		<li>Ensure the feature doesn't impact any content by default on page load unless the feature is explicitly activated through the HTML, either through the use of a CSS class or data attribute;</li>
-		<li>Review the <a href="#implementation-plan">implementation plan</a> to ensure it contains a reasonable due date and deliverable.</li>
+		<li>Review the <a href="#implementation-plan">implementation plan</a> to ensure it contains reasonable due dates and deliverables.</li>
 	</ul>
 </details>
 
@@ -135,17 +152,17 @@ dateModified": 2022-04-19
 
 <h4 id="implementation-plan">Implementation plan</h4>
 
-<p>The implementation plan, also known as a planning horizon, is meant to set milestones in order to get a méli-mélo feature stabilized into the WET-BOEW / GCWeb code base. It must contain:</p>
+<p>The implementation plan, also known as a planning horizon, is meant to set milestones in order to get a méli-mélo feature stabilized into the WET-BOEW / GCWeb code base. It must contain the following milestones:</p>
 
 <ul>
 	<li>Engagement with the Digital Transformation Office (DTO) at Treasury Board Secretariat;</li>
 	<li>Review and perform the identification of the feature transformation requirement to be able to complete the integration progress into GCWeb;</li>
 	<li>Produce accessibility conformance report and attach usability report (if any);</li>
 	<li>Transformation of the méli-mélo functionality into a GCWeb provisional feature;</li>
-	<li>Complete feature stabilisation task, like working example translation, writing guidance, publishing ACRs, feature API documentation, etc.</li>
+	<li>Complete feature stabilisation task, including amongst other things working example translation, writing guidance, publishing ACRs, feature API documentation, etc.</li>
 </ul>
 
-<p>Each item of the plan must have an estimated due date as an indicator to measure integration progress into GCWeb. The expectation is to get the méli-mélo feature fully integrated into GCWeb within its life span. See an <a href="https://raw.githubusercontent.com/wet-boew/GCWeb/master/m%C3%A9li-m%C3%A9lo/2021-05-steps/meta.md">example of an implementation plan</a>.</p>
+<p>Each item of the plan must have an estimated due date as an indicator to measure integration progress into GCWeb. The expectation is to get the méli-mélo feature fully integrated into GCWeb within its lifespan. See an <a href="https://raw.githubusercontent.com/wet-boew/GCWeb/master/m%C3%A9li-m%C3%A9lo/2021-05-steps/meta.md">example of an implementation plan</a>.</p>
 
 <h4>Versioning</h4>
 
