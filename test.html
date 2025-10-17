@@ -2,20 +2,77 @@
 title: GCWeb Test Sandbox
 ---
 
-<div class="wb-frmvld">
-<form action="#" class="wb-postback" data-wb-postback='{"success":".success-message-2","failure":".failure-message-2"}'>
-	<div class="form-content">
-		<div class="form-group">
-			<label for="firstname" class="required"><span class="field-name">First name</span> <strong class="required">(required)</strong></label>
-			<input class="form-control" id="firstname" name="firstname" type="text" data-rule-minlength="2" required="required" />
-		</div>
-		<div class="form-group">
-			<label for="lastname" class="required"><span class="field-name">Last Name</span> <strong class="required">(required)</strong></label>
-			<input class="form-control" id="lastname" name="lastname" type="text" data-rule-minlength="2" required="required" />
-		</div>
-		<button type="submit" class="btn btn-primary">Submit</button>
-	</div>
+<form>
+	<fieldset>
+		<legend>Select province(s)</legend>
+	<ul class="colcount-sm-2 colcount-md-3 wb-filter">
+		<li>
+			<div class="checkbox">
+				<label for="alberta"><input type="checkbox" name="province" value="1" id="alberta" data-rule-required="true">Alberta</label>
+			</div>
+		</li>
+		<li>
+			<div class="checkbox">
+				<label for="britishcolumbia"><input type="checkbox" name="province" value="2" id="britishcolumbia" data-rule-required="true">British Columbia</label>
+			</div>
+		</li>
+		<li><div class="checkbox">
+				<label for="manitoba"><input type="checkbox" name="province" value="3" id="manitoba" data-rule-required="true">Manitoba</label>
+			</div>
+		</li>
+		<li>
+			<div class="checkbox">
+				<label for="newbrunswick"><input type="checkbox" name="province" value="4" id="newbrunswick" data-rule-required="true">New Brunswick</label>
+			</div>
+			New Brunswick
+		</li>
+		<li>
+			<div class="checkbox">
+				<label for="newfoundland"><input type="checkbox" name="province" value="5" id="newfoundland" data-rule-required="true">Newfoundland &amp; Labrador</label>
+			</div>
+		</li>
+		<li>
+			<div class="checkbox">
+				<label for="northwest"><input type="checkbox" name="province" value="6" id="northwest" data-rule-required="true">Northwest Territories</label>
+			</div>
+		</li>
+		<li>
+			<div class="checkbox">
+				<label for="novascotia"><input type="checkbox" name="province" value="7" id="novascotia" data-rule-required="true">Nova Scotia</label>
+			</div>
+			Nova Scotia
+		</li>
+		<li>
+			<div class="checkbox">
+				<label for="nunavut"><input type="checkbox" name="province" value="8" id="nunavut" data-rule-required="true">Nunavut</label>
+			</div>
+		</li>
+		<li>
+			<div class="checkbox">
+				<label for="ontario"><input type="checkbox" name="province" value="9" id="ontario" data-rule-required="true">Ontario</label>
+			</div>
+		</li>
+		<li>
+			<div class="checkbox">
+				<label for="pei"><input type="checkbox" name="province" value="10" id="pei" data-rule-required="true">Prince Edward Island</label>
+			</div>
+		</li>
+		<li>
+			<div class="checkbox">
+				<label for="quebec"><input type="checkbox" name="province" value="11" id="quebec" data-rule-required="true">Quebec</label>
+			</div>
+		</li>
+		<li>
+			<div class="checkbox">
+				<label for="saskatchewan"><input type="checkbox" name="province" value="12" id="saskatchewan" data-rule-required="true">Saskatchewan</label>
+			</div>
+		</li>
+		<li>
+			<div class="checkbox">
+				<label for="yukon"><input type="checkbox" name="province" value="13" id="yukon" data-rule-required="true">Yukon</label>
+			</div>
+		</li>
+	</ul>
+	</fieldset>
+	<input type="submit" class="btn btn-success" value="Submit" />
 </form>
-<p class="success-message-2 hide">Thank you!</p>
-<p class="failure-message-2 hide">Something went wrong. Please submit your information via an alternative method.</p>
-</div>
